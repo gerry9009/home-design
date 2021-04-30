@@ -1,0 +1,74 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * reset.css............CSS reset.
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Box-sizing...........Better default `box-sizing`.
+ * Variables............Globally-available variables.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Headings.............H1-H2 styles.
+ * Base font............Base font style.
+ *
+ */
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+* {
+    box-sizing:                         border-box;
+}
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+:root {
+    --color-first: rgb();
+    --color-second: rgb();
+    
+}
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #BASE FONT
+\*------------------------------------*/
+
+* {
+    font-size:                          10px;
+    text-decoration:                    none;
+    font-family:                        'New Tegomin', serif;
+}
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1 {                                    
+  font-weight:                          900;
+}
+
+h2 {                                    
+  font-weight:                          700;
+}
+
+h3 {                                    
+  font-weight:                          500;
+}
