@@ -18,12 +18,13 @@
 }
 
 
-
 /*------------------------------------*\
   #MODIFIERS
 \*------------------------------------*/
-.main { 
-    height: 1600px;
+.main {
+  padding-top:10vh;
+  color: var(--color-second);
+  background-color: var(--color-background);
 }
 
 

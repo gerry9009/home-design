@@ -43,6 +43,10 @@
     --color-third: #03cea4;
     --color-fourth: #fb4d3d;
     --color-fifth: #ca1551;
+    --color-first-pale: #eac33569;
+    --color-first-shadow: #eac33534;
+    --color-white-dirty: #909cc2;
+    --color-background: #f5f5f5;
 }
 
 
@@ -73,6 +77,7 @@ h1 {
 
 h2 {                                    
   font-weight:                          700;
+  font-size:                            2.6rem;
 }
 
 h3 {                                    
