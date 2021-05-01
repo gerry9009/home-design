@@ -1,0 +1,34 @@
+ /**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container and items
+ * Modifiers............Media queries for the layout.
+ *
+ * WHITESPACES
+ * Whitespaces..........Whitespaces between items.
+ */
+
+ /*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+.header {
+    width: 100vw;
+    position: fixed;
+}
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+.main { 
+    height: 1600px;
+}
+
+
+
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/

@@ -36,9 +36,13 @@
   #VARIABLES
 \*------------------------------------*/
 :root {
-    --color-first: rgb();
-    --color-second: rgb();
-    
+    --color-white: #fff;
+    --color-black: #000;
+    --color-first: #eac435;
+    --color-second: #345995;
+    --color-third: #03cea4;
+    --color-fourth: #fb4d3d;
+    --color-fifth: #ca1551;
 }
 
 
@@ -51,10 +55,12 @@
   #BASE FONT
 \*------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 * {
     font-size:                          10px;
     text-decoration:                    none;
-    font-family:                        'New Tegomin', serif;
+    font-family:                        'Merriweather', serif;
 }
 
 /*------------------------------------*\
