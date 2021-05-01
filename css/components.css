@@ -114,14 +114,14 @@
     margin: 0 20px 0;
     border-radius: 20px;
     cursor: pointer;
-    width: 150px;
+    width: 100px;
     height: 40px;
     visibility: hidden;
     border: none;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     background-color: var(--color-second);
     color: var(--color-white);
 }
@@ -149,9 +149,20 @@
 
 
  /*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+    .menu--btn {
+        width: 150px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+ }
+
+
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
-
+    
  }
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
@@ -162,6 +173,8 @@
     #header--menu__toggle {
         display: none;
     }
+
+
     .header--menu__btn {
         display: none;
     }
@@ -174,8 +187,7 @@
         position: static;
         top: 0;
         height: 100%;
-        width: 80vw;
-        top: 0;
+        width: 80vw; 
         flex-direction: row;
         visibility: visible;
         background-color: var(--color-white);
@@ -196,6 +208,7 @@
         width: 100px;
         height: 30px;
         border-radius: 150px;
+        
     }
 
  }
