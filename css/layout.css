@@ -22,12 +22,18 @@
   #MODIFIERS
 \*------------------------------------*/
 .main {
-  padding-top:10vh;
-  color: var(--color-second);
-  background-color: var(--color-background);
+  padding-top:  10vh;
+  color:  var(--color-second);
+  background-color:  var(--color-background);
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+  .main {
+      padding-top:  7vh;        
+  }
 
+}
 
 
 /*------------------------------------*\
