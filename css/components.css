@@ -221,13 +221,16 @@
     }
   }
 
+/**-----------------------------------------------------------------------------------**/
 /*--X-------------------------------------------------------------------------------X--*/
-
+/**-----------------------------------------------------------------------------------**/
 
 /*------------------------------------*\
   #MAIN
 \*------------------------------------*/
 
+/**----------------------------------------------------------**/
+/*  ------------------------ HOME ------------------------  */
 .home {
     display: flex;
     flex-direction: column-reverse;
@@ -522,16 +525,93 @@
         letter-spacing: 1.8px;
     }
 
- }
+}
  
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
 
-  }
+}
+
+/*  -X---------------------- HOME ----------------------X-  */
+/**----------------------------------------------------------**/
 
 
+/**----------------------------------------------------------**/
+/*  ------------------------ ROOMS ------------------------  */
+
+.rooms {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms-slidershow {
+    width: 95%;
+    overflow: hidden;
+}
+
+.rooms--sliders {
+
+}
+
+#sliders--radio1:checked ~ .sliders--slide__main {
+    border: 2px solid red;
+}
+
+#sliders--radio2:checked ~ .sliders--slide__main {
+    border: 2px solid rgb(255, 230, 0);
+}
+
+#sliders--radio3:checked ~ .sliders--slide__main {
+    border: 2px solid rgb(255, 0, 179);
+}
+
+#sliders--radio4:checked ~ .sliders--slide__main {
+    border: 2px solid rgb(79, 28, 199);
+}
+
+#sliders--radio5:checked ~ .sliders--slide__main {
+    border: 2px solid rgb(24, 187, 111);
+}
+
+.sliders--slide {
+    width: 200px;
+    height: 200px;
+}
+
+.sliders--slide__img {
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+    
+
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (min-width: 768px) { 
+    
+    
+ /* Large devices (desktops, 992px and up) */
+ @media screen and (min-width: 992px) { 
+    
+
+}
+ 
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1200px) {
+
+}
+
+/*  -X---------------------- ROOMS ----------------------X-  */
+
+
+/**-----------------------------------------------------------------------------------**/
 /*--X-------------------------------------------------------------------------------X--*/
-
+/**-----------------------------------------------------------------------------------**/
 
 /*------------------------------------*\
   #FOOTER

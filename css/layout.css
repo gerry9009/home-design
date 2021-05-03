@@ -18,15 +18,16 @@
     z-index: 10;
 }
 
-
-/*------------------------------------*\
-  #MODIFIERS
-\*------------------------------------*/
 .main {
   padding-top:  10vh;
   color:  var(--color-second);
   background-color:  var(--color-background);
 }
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
