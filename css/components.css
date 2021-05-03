@@ -540,70 +540,122 @@
 /*  ------------------------ ROOMS ------------------------  */
 
 .rooms {
-    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
-.rooms-slidershow {
-    width: 95%;
+.rooms--slidershow {
+    width: 98%;
+    height: 60vh;
     overflow: hidden;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-first-pale);
 }
 
-.rooms--sliders {
-
-}
-
-#sliders--radio1:checked ~ .sliders--slide__main {
-    border: 2px solid red;
-}
-
-#sliders--radio2:checked ~ .sliders--slide__main {
-    border: 2px solid rgb(255, 230, 0);
-}
-
-#sliders--radio3:checked ~ .sliders--slide__main {
-    border: 2px solid rgb(255, 0, 179);
-}
-
-#sliders--radio4:checked ~ .sliders--slide__main {
-    border: 2px solid rgb(79, 28, 199);
-}
-
-#sliders--radio5:checked ~ .sliders--slide__main {
-    border: 2px solid rgb(24, 187, 111);
-}
-
-.sliders--slide {
-    width: 200px;
-    height: 200px;
-}
-
-.sliders--slide__img {
-    width: 100%;
+.rooms--slides {
+    width: 500%;
     height: 100%;
+    display: flex;
 }
+
+.slides--slide {
+    width: 20%;
+    border-bottom: 1px solid var(--color-first-pale);
+}
+/* 
+    ezeket el kell tüntetni, a videó alapján kell megcsinálni a 
+    cechkboxokat.
+    
+*/
+#slides--radio1 {
+    position: absolute;
+    left: 40%;
+}
+
+#slides--radio2 {
+    position: absolute;
+    left: 45%;
+}
+
+#slides--radio3 {
+    position: absolute;
+    left: 50%;
+}
+
+#slides--radio4 {
+    position: absolute;
+    left: 55%;
+}
+
+#slides--radio5 {
+    position: absolute;
+    left: 60%;
+}
+
+.radio {
+    bottom: 25%;
+    cursor: pointer;
+}
+
+#slides--radio1:checked ~ .slides--slide__main {
+    margin-left: 0;
+}
+
+#slides--radio2:checked ~ .slides--slide__main {
+    margin-left: -20%;
+}
+
+#slides--radio3:checked ~ .slides--slide__main {
+    margin-left: -40%;
+}
+
+#slides--radio4:checked ~ .slides--slide__main {
+    margin-left: -60%;
+}
+
+#slides--radio5:checked ~ .slides--slide__main {
+    margin-left: -80%;
+}
+
+
+.slides--slide__img {
+    width: 100%;
+    height: 80%;
+}
+
+
 
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
-    
+    .rooms--slidershow {
+        height: 75vh;
+    }
 
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
-    
+    .rooms--slidershow {
+        height: 80vh;
+    }
     
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
-    
+    .rooms--slidershow {
+        height: 85vh;
+    }
 
 }
  
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
-
+    .rooms--slidershow {
+        height: 90vh;
+    }
+    
 }
 
 /*  -X---------------------- ROOMS ----------------------X-  */
