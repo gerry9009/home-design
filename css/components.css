@@ -541,10 +541,12 @@
 
 .rooms {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     padding-bottom: 2rem;
+    border-top: 1px solid var(--color-first-pale);
 }
 
 .rooms--slidershow {
@@ -552,7 +554,7 @@
     height: 60vh;
     overflow: hidden;
     padding-top: 2rem;
-    border-top: 1px solid var(--color-first-pale);
+    
 }
 
 .rooms--slides {
@@ -626,6 +628,61 @@
     height: 80%;
 }
 
+.slide--title {
+    padding-top: 1vh;
+    padding-left: 6vw;
+    color: var(--color-second);
+}
+
+h4 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.slide--title__par {
+    font-size: .8rem;
+    margin-top: 6px;
+}
+
+.slide--title__arrow {
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+
+.slide--title__livingroom {
+    background-color: var(--color-fourth);
+}
+
+.slide--title__kitchen {
+    background-color: var(--color-white);
+}
+
+.slide--title__bedroom {
+    background-color: var(--color-fifth);
+}
+
+.slide--title__bathroom {
+    background-color: var(--color-third);
+}
+
+.slide--title__terrace {
+    background-color: var(--color-white-dirty);
+}
+
+.room--navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.room--navigation__bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    margin: 6px;
+    display: block;
+    cursor: pointer;
+}
 
 
 /*------------------MEDIA------------------*/
@@ -635,17 +692,67 @@
         height: 75vh;
     }
 
+    h4 {
+        font-size: 1.2rem;
+        letter-spacing: 1.2px;
+    }
+    
+    .slide--title__par {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+    
+    .slide--title__arrow {
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
     .rooms--slidershow {
         height: 80vh;
     }
+
+    h4 {
+        font-size: 1.4rem;
+        letter-spacing: 1.6px;
+    }
     
+    .slide--title__par {
+        font-size: 1.1rem;
+        margin-top: 12px;
+    }
+    
+    .slide--title__arrow {
+        font-size: 1.6rem;
+        margin-top: 12px;
+    }
+
+
+}
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
     .rooms--slidershow {
+        width: 90%;
+    }
+    
+    .rooms--slidershow {
         height: 85vh;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+        letter-spacing: 1.8px;
+    }
+    
+    .slide--title__par {
+        font-size: 1.2rem;
+        margin-top: 14px;
+    }
+    
+    .slide--title__arrow {
+        font-size: 1.8rem;
+        margin-top: 14px;
     }
 
 }
@@ -653,7 +760,12 @@
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
     .rooms--slidershow {
-        height: 90vh;
+        width: 85%;
+    }
+    
+    
+    .rooms--slidershow {
+        height: 95vh;
     }
     
 }
