@@ -46,7 +46,14 @@
     --color-first-pale: #eac33569;
     --color-first-shadow: #eac33534;
     --color-white-dirty: #909cc2;
+
     --color-background: #f5f5f5;
+    
+    --color-livingroom: #f6bd60;
+    --color-kitchen: #f7ede2;
+    --color-bedroom: #f28482;
+    --color-bathroom: #5ec0eb;
+    --color-terrace: #f5cac3;
 }
 
 

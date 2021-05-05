@@ -122,7 +122,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 500;
-    font-size: 1.0rem;
+    font-size: .8rem;
     background-color: var(--color-second);
     color: var(--color-white);
 }
@@ -549,12 +549,15 @@
     border-top: 1px solid var(--color-first-pale);
 }
 
+.rooms > h2 {
+    text-align: center;
+}
+
 .rooms--slidershow {
-    width: 98%;
-    height: 60vh;
+    width: 85%;
+    height: 90%;
     overflow: hidden;
     padding-top: 2rem;
-    
 }
 
 .rooms--slides {
@@ -563,15 +566,32 @@
     display: flex;
 }
 
+.room--navigation {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 70%;
+    left: 27.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.room--navigation__bar {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    border: 2px solid var(--color-white);
+    display: block;
+    cursor: pointer;
+}
+
 .slides--slide {
     width: 20%;
     border-bottom: 1px solid var(--color-first-pale);
+    transition: 2s;
 }
-/* 
-    ezeket el kell tüntetni, a videó alapján kell megcsinálni a 
-    cechkboxokat.
-    
-*/
+
 #slides--radio1 {
     position: absolute;
     left: 40%;
@@ -597,45 +617,66 @@
     left: 60%;
 }
 
-.radio {
-    bottom: 25%;
-    cursor: pointer;
+input[type="radio"] {
+    visibility: hidden;
 }
+
 
 #slides--radio1:checked ~ .slides--slide__main {
     margin-left: 0;
+}
+
+#slides--radio1:checked ~ .room--navigation > .room--navigation__bar1 {
+    background-color: var(--color-white-dirty);
 }
 
 #slides--radio2:checked ~ .slides--slide__main {
     margin-left: -20%;
 }
 
+#slides--radio2:checked ~ .room--navigation > .room--navigation__bar2 {
+    background-color: var(--color-white-dirty);
+}
+
 #slides--radio3:checked ~ .slides--slide__main {
     margin-left: -40%;
+}
+
+#slides--radio3:checked ~ .room--navigation > .room--navigation__bar3 {
+
+    background-color: var(--color-white-dirty);
 }
 
 #slides--radio4:checked ~ .slides--slide__main {
     margin-left: -60%;
 }
 
+#slides--radio4:checked ~ .room--navigation > .room--navigation__bar4 {
+    background-color: var(--color-white-dirty);
+}
+
 #slides--radio5:checked ~ .slides--slide__main {
     margin-left: -80%;
+}
+
+#slides--radio5:checked ~ .room--navigation > .room--navigation__bar5 {
+    background-color: var(--color-white-dirty);
 }
 
 
 .slides--slide__img {
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 
 .slide--title {
-    padding-top: 1vh;
+    padding-top: .9vh;
     padding-left: 6vw;
     color: var(--color-second);
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 1px;
     font-weight: 700;
 }
@@ -650,46 +691,48 @@ h4 {
     margin-top: 6px;
 }
 
+
+.slides--slide .slide--title * {
+    color: var(--color-black);
+}
+
 .slide--title__livingroom {
-    background-color: var(--color-fourth);
+    background-color: var(--color-livingroom);
 }
 
 .slide--title__kitchen {
-    background-color: var(--color-white);
+    background-color: var(--color-kitchen);
 }
 
 .slide--title__bedroom {
-    background-color: var(--color-fifth);
+    background-color: var(--color-bedroom);
 }
 
 .slide--title__bathroom {
-    background-color: var(--color-third);
+    background-color: var(--color-bathroom);
 }
 
 .slide--title__terrace {
-    background-color: var(--color-white-dirty);
+    background-color: var(--color-terrace);
 }
 
-.room--navigation {
-    display: flex;
-    flex-direction: row;
-}
 
-.room--navigation__bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid black;
-    margin: 6px;
-    display: block;
-    cursor: pointer;
+.slides--slide a:hover {
+    text-decoration: underline var(--color-black);
 }
-
+/** Automatikus slide egz plusz opció */
 
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
     .rooms--slidershow {
         height: 75vh;
+    }
+
+    .room--navigation {
+        top: 68%;
+        left: 35%;
+        width: 30%;
     }
 
     h4 {
@@ -706,6 +749,8 @@ h4 {
         font-size: 1.4rem;
         margin-top: 10px;
     }
+
+
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
@@ -728,6 +773,11 @@ h4 {
         margin-top: 12px;
     }
 
+    
+    .room--navigation__bar {
+        width: 16px;
+        height: 16px;
+    }
 
 }
  /* Large devices (desktops, 992px and up) */
@@ -760,14 +810,13 @@ h4 {
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
     .rooms--slidershow {
-        width: 85%;
+        width: 70%;
     }
-    
     
     .rooms--slidershow {
-        height: 95vh;
+        height: 75vh;
     }
-    
+  
 }
 
 /*  -X---------------------- ROOMS ----------------------X-  */
