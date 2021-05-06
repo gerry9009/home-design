@@ -540,6 +540,7 @@
 /*  ------------------------ ROOMS ------------------------  */
 
 .rooms {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -672,7 +673,10 @@ input[type="radio"] {
 .slide--title {
     padding-top: .9vh;
     padding-left: 6vw;
-    color: var(--color-second);
+}
+
+.slides--slide .slide--title h4, p {
+    color: var(--color-black);
 }
 
 h4 {
@@ -687,13 +691,12 @@ h4 {
 }
 
 .slide--title__arrow {
-    font-size: 1.2rem;
-    margin-top: 6px;
-}
-
-
-.slides--slide .slide--title * {
-    color: var(--color-black);
+    margin-top: 16px;
+    padding: 6px;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 
 .slide--title__livingroom {
@@ -720,7 +723,7 @@ h4 {
 .slides--slide a:hover {
     text-decoration: underline var(--color-black);
 }
-/** Automatikus slide egz plusz opció */
+/** Automatikus slide egy plusz opció */
 
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
@@ -746,8 +749,8 @@ h4 {
     }
     
     .slide--title__arrow {
-        font-size: 1.4rem;
-        margin-top: 10px;
+        font-size: .8rem;
+        margin-top: 25px;
     }
 
 
@@ -769,8 +772,7 @@ h4 {
     }
     
     .slide--title__arrow {
-        font-size: 1.6rem;
-        margin-top: 12px;
+        margin-top: 26px;
     }
 
     
@@ -801,8 +803,8 @@ h4 {
     }
     
     .slide--title__arrow {
-        font-size: 1.8rem;
-        margin-top: 14px;
+        font-size: .8rem;
+        margin-top: 28px;
     }
 
 }
@@ -820,7 +822,102 @@ h4 {
 }
 
 /*  -X---------------------- ROOMS ----------------------X-  */
+/**----------------------------------------------------------**/
 
+/**----------------------------------------------------------------**/
+/*  ------------------------ INSPIRATION ------------------------  */
+
+.inspiration {
+    border-top: 1px solid var(--color-first-pale);
+}
+
+
+/*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (min-width: 768px) { 
+
+}
+ /* Large devices (desktops, 992px and up) */
+ @media screen and (min-width: 992px) { 
+
+}
+ 
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1200px) {
+
+}
+
+
+/*  -X---------------------- INSPIRATION ----------------------X-  */
+/**---------------------------------------------------------------**/
+
+/**----------------------------------------------------------------**/
+/*  ------------------------ CONTACT ------------------------  */
+
+.contact {
+    border-top: 1px solid var(--color-first-pale);
+
+}
+
+
+/*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (min-width: 768px) { 
+
+}
+ /* Large devices (desktops, 992px and up) */
+ @media screen and (min-width: 992px) { 
+
+}
+ 
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1200px) {
+
+}
+
+
+/*  -X---------------------- CONTACT ----------------------X-  */
+/**---------------------------------------------------------------**/
+
+/**----------------------------------------------------------------**/
+/*  ------------------------ GETAPP ------------------------  */
+
+.getapp {
+    border-top: 1px solid var(--color-first-pale);
+
+}
+
+
+/*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (min-width: 768px) { 
+
+}
+ /* Large devices (desktops, 992px and up) */
+ @media screen and (min-width: 992px) { 
+
+}
+ 
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1200px) {
+
+}
+
+
+/*  -X---------------------- GETAPP ----------------------X-  */
+/**---------------------------------------------------------------**/
 
 /**-----------------------------------------------------------------------------------**/
 /*--X-------------------------------------------------------------------------------X--*/
