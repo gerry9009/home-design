@@ -842,27 +842,37 @@ h4 {
 
 .inspiration--container {
     width: 90%;
-    max-width: 500px;
     margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .container--product {
     width: 100%;
+    max-width: 500px;
     height: 60vh;
+    max-height: 450px;
     display: flex;
     flex-direction: column;
     border-radius: 2%;
     align-items: center;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
     box-shadow: 1px 2px 15px 2px var(--color-first-pale);
 }
 
-
+.container--product__right {
+    border-top-right-radius: 20%;
+}
 
 
 .product--img {
     display: flex;
     background-color: var(--color-first-pale);
+    max-width: 550px;
+    max-height: 550px;
 }
 
 .product--img__left {
@@ -877,7 +887,8 @@ h4 {
 
 .product--img img {
     width: 95%;
-    max-height: 90%;
+    height: 95%;
+    
 }
 
 .product--img__left img {
@@ -922,7 +933,10 @@ h4 {
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
-
+    .container--product {
+        height: 65vh;
+        max-height: 500px;
+    }   
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
@@ -930,14 +944,27 @@ h4 {
 }
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
+    .inspiration--container {
+        width: 95%;
+        flex-direction: row;
+    }
 
+    .container--product {
+        max-width: 500px;
+    }
 }
+
  
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
-
+    .inspiration--container {
+        width: 85%;
+    }
+    
+    .container--product {
+        max-width: 550px;
+    }
 }
-
 
 /*  -X---------------------- INSPIRATION ----------------------X-  */
 /**---------------------------------------------------------------**/
