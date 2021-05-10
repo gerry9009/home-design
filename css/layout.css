@@ -12,6 +12,10 @@
  /*------------------------------------*\
   #ELEMENTS
 \*------------------------------------*/
+* {
+  scroll-behavior: smooth;
+}
+
 .header {
     width: 100vw;
     position: fixed;
@@ -22,6 +26,11 @@
     padding-top:  10vh;
     color:  var(--color-second);
     background-color:  var(--color-background);
+}
+
+.footer {
+  background-color: var(--color-background-foot);
+  display: flex;
 }
 
 /*------------------------------------*\

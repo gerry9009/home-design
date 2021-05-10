@@ -19,7 +19,7 @@
 <body>
 <!-- -------------------------------- HEADER  -------------------------------- -->
 
-<header class="header">
+<header id="header" class="header">
     <div class="header--container">
         <nav class="header--nav">
             <a href="#" class="header--logo">
@@ -332,14 +332,14 @@
                 </a>           
             </div> 
         </div>
-        <button>Load more</button>   
+        <button class="inspiration--btn">Load more</button>   
     </section>
 <!-- -X----------X--- INSPIRATION  ---X----------X- -->
 
 
 <!-- ------------- CONTACT  ------------- -->
-    <section class="Contact" id="Contact">
-        <!-- survey form and -->
+    <section class="contact" id="contact">
+
         <div class="contact--title">
             <h2>What are you looking for?</h2>
             <p>
@@ -384,15 +384,17 @@
 <!-- ------------- GET APP  ------------- -->
     <section class="getapp" id="getapp">
         <div class="getapp--container">
-            <div class="getapp--container__pic"></div>
+            <div class="getapp--container__pic">
+                <img src="./assets/getapp.jpg" alt="Order in mobile">
+            </div>
             <div class="getapp--container__desc">
                 <h5>10% Cashback</h5>
                 <h2>Now You Can Order From Mobile</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore placeat odio ea consequuntur hic est quasi dolore nostrum officiis laborum explicabo expedita cum veritatis quis optio non dolor nam amet a, error minima? Et, dolor necessitatibus.
                 </p>
-                <i class="fab fa-google-play"></i>
-                <i class="fab fa-app-store"></i>
+                <a href="#google-play"><i class="fab fa-google-play">Google play</i></a>
+                <a href="#app-store"><i class="fab fa-app-store">App store</i></a>
             </div>
         </div>
     </section>
@@ -405,6 +407,7 @@
 <!-- -------------------------------- FOOTER  -------------------------------- -->
 
 <footer class="footer"> 
+
     <div class="footer--shopping">
         <h3>About shopping</h3>
         <p>
@@ -448,11 +451,18 @@
         </ul>
     </div>
 
+    <!-- -------------------------------- BACK TO THE TOP ARROW  -------------------------------- -->
+<div class="backarrow">
+    <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
+</div>
+<!-- -X--------------------------X--- BACK TO THE TOP ARROW  ---X--------------------------X- --> 
+
 </footer>
 
 <!-- -X--------------------------X--- FOOTER  ---X--------------------------X- -->
 
 
+ 
 </body>
 <!-- -------------------------------- JS script  -------------------------------- -->
 <script src="./js/main.js"></script>
