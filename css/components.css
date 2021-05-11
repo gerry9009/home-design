@@ -1140,6 +1140,87 @@ h4 {
   #FOOTER
 \*------------------------------------*/
 
+.footer--items {
+    width: 90%;
+    margin: 0.2rem 0;
+    border-top: 1px solid var(--color-first-pale);
+  }
+  
+  .footer--menu__btn {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .footer--menu__btn h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    color: var(--color-black);
+  }
+  
+  .footer--menu__btn h3::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black);
+    transform: rotate(45deg);
+    transition-duration: 0.4s;
+    right: 35px;
+  }
+  
+  .footer--items input[type="checkbox"] {
+    display: none;
+  }
+  
+  .footer--items__links {
+    visibility: hidden;
+    transition-duration: 0.1s;
+    height: 0;
+    padding-right: 4rem;
+  }
+  
+  .footer--items__links p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer--items__links li {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .footer--items__links li a {
+    color: var(--color-black);
+    text-decoration: underline;
+  }
+  
+  .footer--items__links li a:hover {
+    color: var(--color-fifth);
+  }
+  
+  #footer--shopping__toggle:checked ~ .footer--menu__btn h3::after,
+  #footer--about__toggle:checked ~ .footer--menu__btn h3::after,
+  #footer--support__toggle:checked ~ .footer--menu__btn h3::after {
+    transform: rotate(225deg);
+  }
+  
+  #footer--shopping__toggle:checked ~ .footer--items__links {
+    height: 290px;
+    visibility: visible;
+  }
+  
+  #footer--about__toggle:checked ~ .footer--items__links {
+    height: 420px;
+    visibility: visible;
+  }
+  
+  #footer--support__toggle:checked ~ .footer--items__links {
+    height: 320px;
+    visibility: visible;
+  }
+
 
 
 
@@ -1168,7 +1249,45 @@ h4 {
 }
 
  /*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 2rem 3rem;
+  }
 
+  .footer--items {
+    border: none;
+  }
+
+  .footer--menu__btn {
+    cursor: none;
+  }
+
+  .footer--menu__btn h3::after {
+    visibility: hidden;
+  }
+
+  .footer--items__links {
+    visibility: visible;
+    height: 100%;
+  }
+
+  .footer--menu__btn h3 {
+    padding: 0.3rem 0;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}
 
 
 /*--X-------------------------------------------------------------------------------X--*/
