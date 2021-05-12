@@ -109,12 +109,19 @@
     color: var(--color-second);
 }
 
+.menu--btn__container {
+    display: flex;
+}
+
 .menu--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 20px 0;
     border-radius: 20px;
     cursor: pointer;
     width: 100px;
-    height: 40px;
+    height: 50px;
     visibility: hidden;
     border: none;
     text-transform: uppercase;
@@ -385,7 +392,6 @@
     '. .';
     gap: 1px 2px;
     justify-items: center;
-    align-items: space-between;
     box-shadow: 4px 6px 5px var(--color-first);
 }
 
@@ -938,7 +944,10 @@ h4 {
     font-size: .7rem;
 }
 
-.product--prod button {
+.product--prod span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 12vw;
     height: 3vh;
@@ -951,7 +960,7 @@ h4 {
     border-radius: 20%;
 }
 
-.product--prod button:hover {
+.product--prod span:hover {
     background-color: var(--color-first);
     transition-duration: .6s;
 
@@ -1151,14 +1160,14 @@ h4 {
     cursor: pointer;
   }
   
-  .footer--menu__btn h3 {
+  .footer--menu__btn span {
     font-size: 1rem;
     font-weight: 700;
     padding: 1rem 0;
     color: var(--color-black);
   }
   
-  .footer--menu__btn h3::after {
+  .footer--menu__btn span::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -1200,9 +1209,9 @@ h4 {
     color: var(--color-fifth);
   }
   
-  #footer--shopping__toggle:checked ~ .footer--menu__btn h3::after,
-  #footer--about__toggle:checked ~ .footer--menu__btn h3::after,
-  #footer--support__toggle:checked ~ .footer--menu__btn h3::after {
+  #footer--shopping__toggle:checked ~ .footer--menu__btn span::after,
+  #footer--about__toggle:checked ~ .footer--menu__btn span::after,
+  #footer--support__toggle:checked ~ .footer--menu__btn span::after {
     transform: rotate(225deg);
   }
   
@@ -1268,7 +1277,7 @@ h4 {
     cursor: none;
   }
 
-  .footer--menu__btn h3::after {
+  .footer--menu__btn span::after {
     visibility: hidden;
   }
 
@@ -1277,7 +1286,7 @@ h4 {
     height: 100%;
   }
 
-  .footer--menu__btn h3 {
+  .footer--menu__btn span {
     padding: 0.3rem 0;
   }
 }
