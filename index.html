@@ -64,7 +64,7 @@
             </p>
             <div class="left--search">
                 <input type="text" placeholder="What are you looking for?" name="search" id="search" autocomplete="off">
-                <input type="submit" value="Search">
+                <input class="submitBtn" type="submit" value="Search">
             </div>
             <nav class="left--soc">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -345,14 +345,20 @@
             </p>
             <form class="contact--form">
 
+              
                 <div class="contact--form__formbox">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required="required" placeholder="Enter your name">
+                    <input type="text" id="firstname" name="firstname" required="required" >
+                    <label for="name">First name</label>
                 </div>
 
-               <div class="contact--form__formbox">
+                <div class="contact--form__formbox">
+                    <input type="text" id="lastname" name="lastname" required="required" >
+                    <label for="name">Last name</label>
+                </div>
+                
+                <div class="contact--form__formbox">
+                    <input type="email" id="email" name="email" required="required" >
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required="required" placeholder="Enter your email">
                 </div>
 
                 <select class="contact--form__formbox">
@@ -365,15 +371,18 @@
                     <option value="spare">Spare parts</option>
                     <option value="guarantees">Guarantees</option>
                 </select>    
+            
+
+                <div class="contact--form__formbox">
+                    
+                    <textarea id="message" name="user_message">Dear Friends,</textarea>
+                    <label for="message">Enter text here ...</label>
+                    
+                </div>
+
+                <input class="submitBtn" type="submit" id="submit" value="submit">
+
             </form>
-
-            <div class="contact--form__formbox">
-                <label for="message">Message</label>
-                <textarea id="message" name="user_message" placeholder="Enter text here..."></textarea>
-            </div>
-
-            <input type="submit" id="submit" value="submit">
-
         </div>
     </section>
 <!-- -X----------X--- CONTACT  ---X----------X- -->

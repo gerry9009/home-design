@@ -29,5 +29,8 @@ Carousel slider:
 - <a href="https://codesandbox.io/s/carousel-slider-u6l9g?file=/index.html:1545-1622 ">Carousel slider - in my codesandbox </a>
 
 
+Form style: 
+- <a href="https://www.youtube.com/watch?v=BKhoo6RSEDU&ab_channel=OnlineTutorials">Online Tutorials</a>
+
 Hamburger footer: 
 - <a href="https://codesandbox.io/s/hamburger-footer-x2gbf?file=/style.css:3266-3297">Hamburger footer - in my codesandbox</a> from <a href="https://www.ikea.com/gb/en/new/">IKEA</a>

@@ -28,6 +28,7 @@
     background-color:  var(--color-background);
 }
 
+
 .footer {
   background-color: var(--color-background-foot);
   display: flex;

@@ -304,7 +304,7 @@
     letter-spacing: 1px;
 }
 
-.left--search input[type="submit"] {
+.submitBtn {
     font-size: 1.2rem;
     letter-spacing: 1.5px;
     margin-right: 4px;
@@ -317,7 +317,7 @@
     color: var(--color-white);
 }
 
-.left--search input[type="submit"]:hover {
+.submitBtn:hover {
     width: 42%;
     height: 92%;
     box-shadow: 4px 4px 5px var(--color-first);
@@ -1047,6 +1047,110 @@ h4 {
     margin-top: 3rem;
     padding: 4rem;
 }
+
+.contact--title {
+
+}
+
+.contact--title h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact--title p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact--form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact--form__formbox {
+    font-size: 1.2rem;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.contact--form__formbox input {
+    color: var(--color-second);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    margin-bottom: .8rem;
+    background-color: var(--color-background);
+}
+
+.contact--form__formbox label {
+    color: var(--color-black);
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: var(--color-black);
+    transition: .6s;
+}
+
+.contact--form select {
+    margin: 1.5rem 0;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: var(--color-background);
+    color: var(--color-second);
+    font-weight: 700;
+}
+
+
+.contact--form__formbox option {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-black);
+}
+
+.contact--form__formbox textarea {
+    height: 12vh;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    color: var(--color-second);
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: var(--color-background);
+}
+
+.contact--form__formbox input:focus,
+.contact--form__formbox textarea:focus  {
+    outline: none;
+    border-bottom: 2px solid var(--color-second);
+}
+
+.contact--form__formbox input:focus ~ label,
+.contact--form__formbox textarea:focus ~ label,
+.contact--form__formbox input:valid ~ label,
+.contact--form__formbox textarea:valid ~ label {
+    top: -1.8rem;
+    font-size: 1rem;
+}
+
+
+.contact--form input[type="submit"] {
+    margin-top: 3rem;
+    width: 40%;
+    height: 6vh;
+}
+
+.contact--form input[type="submit"]:hover {
+    box-shadow: 4px 4px 5px var(--color-first-pale);
+}
+
 
 
 /*------------------MEDIA------------------*/
