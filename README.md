@@ -21,7 +21,6 @@ Hamburger nav:
 - <a href="https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1642s&ab_channel=TraversyMedia">Kevin Powell
 </a>
 
-
 Carousel slider:
 - <a href="https://www.youtube.com/watch?v=9Irz0c-6UGw">DarkCode</a>
 - <a href="https://www.youtube.com/watch?v=pGHOaY4dhAA">w3newbie</a>

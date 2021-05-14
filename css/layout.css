@@ -4,9 +4,6 @@
  * LAYOUT
  * Elements.............Rules for the container and items
  * Modifiers............Media queries for the layout.
- *
- * WHITESPACES
- * Whitespaces..........Whitespaces between items.
  */
 
  /*------------------------------------*\
@@ -50,14 +47,7 @@
   }
 
   .footer {
-    flex-direction: row;
-    align-items: flex-start;
     padding: 1rem 2rem 3rem;
   }
 
 }
-
-
-/*------------------------------------*\
-  #WHITESPACES
-\*------------------------------------*/

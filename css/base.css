@@ -16,7 +16,6 @@
  * SETTINGS
  * Box-sizing...........Better default `box-sizing`.
  * Variables............Globally-available variables.
- * Margins..............Top and bottom margins global values.
  *
  * BASE STYLES
  * Headings.............H1-H2 styles.
@@ -57,12 +56,6 @@
     --color-terrace: #f5cac3;
 }
 
-
-/*------------------------------------*\
-  #MARGINS
-\*------------------------------------*/
-
-
 /*------------------------------------*\
   #BASE FONT
 \*------------------------------------*/
@@ -85,7 +78,7 @@ h1 {
 
 h2 {                                    
   font-weight:                          700;
-  font-size:                            2.6rem;
+  font-size:                            2.4rem;
 }
 
 h3 {                                    

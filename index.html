@@ -25,7 +25,7 @@
             </a>
             <div class="header--menu">
                 <input type="checkbox" name="hamburger" id="header--menu__toggle">
-                <label for="header--menu__toggle" class="header--menu__btn">
+                <label tabindex="0" for="header--menu__toggle" class="header--menu__btn">
                     <span class="header--menu__lines"></span>
                 </label>
                 <ul class="header--menu__box">
@@ -67,9 +67,10 @@
                 <input class="submitBtn" type="submit" value="Search">
             </div>
             <nav class="left--soc">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#youtube"><i class="fab fa-youtube"></i></a>
             </nav>
         </div>
 
@@ -343,17 +344,21 @@
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut corrupti quo id deserunt officia ab, accusantium, eius, inventore veritatis explicabo a pariatur.
             </p>
-            <form class="contact--form">
+            <form 
+                class="contact--form"
+                action="https://formspree.io/f/mleajnge"
+                method="POST"
+            >
 
               
                 <div class="contact--form__formbox">
                     <input type="text" id="firstname" name="firstname" required="required" >
-                    <label for="name">First name</label>
+                    <label for="firstname">First name</label>
                 </div>
 
                 <div class="contact--form__formbox">
                     <input type="text" id="lastname" name="lastname" required="required" >
-                    <label for="name">Last name</label>
+                    <label for="lastname">Last name</label>
                 </div>
                 
                 <div class="contact--form__formbox">
@@ -375,7 +380,7 @@
 
                 <div class="contact--form__formbox">
                     
-                    <textarea id="message" name="user_message">Dear Friends,</textarea>
+                    <textarea id="message" name="user_message" required=""></textarea>
                     <label for="message">Enter text here ...</label>
                     
                 </div>
@@ -416,106 +421,142 @@
 <!-- -------------------------------- FOOTER  -------------------------------- -->
 
 <footer class="footer"> 
-
-    <div class="footer--items footer--shopping">
-        <input
-          type="checkbox"
-          name="footer--menu"
-          id="footer--shopping__toggle"
-        />
-        <label for="footer--shopping__toggle" class="footer--menu__btn">
-          <span>About shopping</span>
-        </label>
-        <div class="footer--items__links">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-            incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-            accusantium at earum facere error consequatur nam expedita natus
-            deleniti?
-          </p>
-          <ul>
-            <li><a href="#localstore">Find your local store</a></li>
-            <li><a href="#howtoshop">How to shop at Luxory Home Design</a></li>
-            <li><a href="#prepare">Prepare for your visit</a></li>
-            <li><a href="#getapp">Luxory Home Design mobile apps</a></li>
-          </ul>
+    <div class="footer--container">
+        <div class="footer--items footer--shopping">
+            <input
+            type="checkbox"
+            name="footer--menu"
+            id="footer--shopping__toggle"
+            />
+            <label tabindex="0" for="footer--shopping__toggle" class="footer--menu__btn">
+            <span >About shopping</span>
+            </label>
+            <div class="footer--items__links">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
+                accusantium at earum facere error consequatur nam expedita natus
+                deleniti?
+            </p>
+            <ul>
+                <li><a href="#localstore">Find your local store</a></li>
+                <li><a href="#howtoshop">How to shop at Luxory Home Design</a></li>
+                <li><a href="#prepare">Prepare for your visit</a></li>
+                <li><a href="#getapp">Luxory Home Design mobile apps</a></li>
+            </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="footer--items footer--products">
-    <input type="checkbox" name="footer--menu" id="footer--about__toggle" />
-    <label for="footer--about__toggle" class="footer--menu__btn">
-        <span>About products</span>
-    </label>
-    <div class="footer--items__links">
-        <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-        incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-        accusantium at earum facere error consequatur nam expedita natus
-        deleniti?
-        </p>
-        <ul>
-        <li><a href="#giftcards">Gift cards</a></li>
-        <li><a href="#buyingguides">Buying guides</a></li>
-        <li><a href="#productguides">Product guides</a></li>
-        <li><a href="#assembly">Assembly instructionss</a></li>
-        <li><a href="#smartproduct">Smart products support</a></li>
-        <li>
-            <a href="#saferhome">Secure it! Creating safer homes together</a>
-        </li>
-        <li>
-            <a href="#productratings"
-            >Luxory Home Design Product Ratings and Reviews</a
-            >
-        </li>
-        <li><a href="#feedback">Luxory Home Design Feedback</a></li>
-        </ul>
-    </div>
-    </div>
+        <div class="footer--items footer--products">
+            <input 
+                type="checkbox" 
+                name="footer--menu" 
+                id="footer--about__toggle" 
+            />
 
-    <div class="footer--items footer--support">
-    <input
-        type="checkbox"
-        name="footer--menu"
-        id="footer--support__toggle"
-    />
-    <label for="footer--support__toggle" class="footer--menu__btn">
-        <span>Support</span>
-    </label>
-    <div class="footer--items__links">
-        <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-        incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-        accusantium at earum facere error consequatur nam expedita natus
-        deleniti?
-        </p>
-        <ul>
-        <li>
-            <a href="#appliance">Appliance claims</a>
-        </li>
-        <li>
-            <a href="#damagedMissingProducts">Damaged/missing products</a>
-        </li>
-        <li>
-            <a href="#faultyProducts">Faulty products</a>
-        </li>
-        <li>
-            <a href="#returningProducts">Returning products</a>
-        </li>
-        <li>
-            <a href="#productsRecalls">Product recalls</a>
-        </li>
-        <li>
-            <a href="#trackYourOrder">Manage and track your order</a>
-        </li>
-        </ul>
+            <label tabindex="0" for="footer--about__toggle" class="footer--menu__btn">
+                <span >About products</span>
+            </label>
+
+            <div class="footer--items__links">
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
+                accusantium at earum facere error consequatur nam expedita natus
+                deleniti?
+                </p>
+                <ul>
+                <li><a href="#giftcards">Gift cards</a></li>
+                <li><a href="#buyingguides">Buying guides</a></li>
+                <li><a href="#productguides">Product guides</a></li>
+                <li><a href="#assembly">Assembly instructionss</a></li>
+                <li><a href="#smartproduct">Smart products support</a></li>
+                <li>
+                    <a href="#saferhome">Secure it! Creating safer homes together</a>
+                </li>
+                <li>
+                    <a href="#productratings"
+                    >Luxory Home Design Product Ratings and Reviews</a
+                    >
+                </li>
+                <li><a href="#feedback">Luxory Home Design Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer--items footer--support">
+            <input
+                type="checkbox"
+                name="footer--menu"
+                id="footer--support__toggle"
+            />
+            <label tabindex="0" for="footer--support__toggle" class="footer--menu__btn">
+                <span>Support</span>
+            </label>
+            <div class="footer--items__links">
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
+                accusantium at earum facere error consequatur nam expedita natus
+                deleniti?
+                </p>
+                <ul>
+                <li>
+                    <a href="#appliance">Appliance claims</a>
+                </li>
+                <li>
+                    <a href="#damagedMissingProducts">Damaged/missing products</a>
+                </li>
+                <li>
+                    <a href="#faultyProducts">Faulty products</a>
+                </li>
+                <li>
+                    <a href="#returningProducts">Returning products</a>
+                </li>
+                <li>
+                    <a href="#productsRecalls">Product recalls</a>
+                </li>
+                <li>
+                    <a href="#trackYourOrder">Manage and track your order</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+
+    <div class="footer--links">
+
+        <div class="footer--links__social">
+            <a class="social--links social--media" href="#facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="social--links social--media" href="#twitter"><i class="fab fa-twitter"></i></a>
+            <a class="social--links social--media" href="#instagram"><i class="fab fa-instagram"></i></a>
+            <a class="social--links social--media" href="#youtube"><i class="fab fa-youtube"></i></a>
+            <a class="social--links social--pay" href="#payinformation"><i class="fab fa-cc-visa"></i></a>
+            <a class="social--links social--pay" href="#payinformation"><i class="fab fa-cc-mastercard"></i></a>
+            <a class="social--links social--pay" href="#payinformation"><i class="fab fa-cc-paypal"></i></a>
+            <a class="social--links social--pay" href="#payinformation"><i class="fab fa-cc-apple-pay"></i></a>
+        </div>
+
+        <div class="footer--links__address">
+            <p>Home Design Hungary - 1th Floor, 95 Rainbow Street, Budapest, 1201 © Home Design 2002-2021</p>
+        </div>
+
+        <div class="footer--links__policy">
+            <a href="#privacyPolicy">Privacy policy</a>
+            <a href="#cookiePolicy">Cookie policy</a>
+            <a href="#cookieSettings">Cookie settings</a>
+            <a href="#terms&Conditions">Terms & Conditions</a>
+            <a href="#responsibleDisclosurePolicy">Responsible Disclosure policy</a>
+            <a href="#modernSlaveryStatement">Modern Slavery Statement</a>
+            <a href="#accessibility">Accessibility</a>
+        </div>
+        
     </div>
-    </div>
-      
     <!-- -------------------------------- BACK TO THE TOP ARROW  -------------------------------- -->
     <div class="backarrow">
         <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
     </div>
+
 <!-- -X--------------------------X--- BACK TO THE TOP ARROW  ---X--------------------------X- --> 
 
 </footer>
@@ -526,6 +567,5 @@
 <script src="./js/main.js"></script>
  
 </body>
-
 
 </html>
