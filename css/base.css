@@ -37,16 +37,17 @@
 :root {
     --color-white: #fff;
     --color-black: #000;
-    --color-first: #eac435;
-    --color-second: #345995;
+    --color-gray: #b79f6e;
+    --color-first: #c9bda2;
+    --color-second: #4A5F71;   /*345995*/
     --color-third: #03cea4;
     --color-fourth: #fb4d3d;
-    --color-fifth: #ca1551;
-    --color-first-pale: #eac33569;
+    --color-fifth: #ca1551;  /**/
+    --color-first-pale: #eac33569; /* eac33569 */
     --color-first-shadow: #eac33534;
     --color-white-dirty: #909cc2;
 
-    --color-background: #f5f5f5;
+    --color-background: #eeeeee;
     --color-background-foot: #ececec; 
     
     --color-livingroom: #f6bd60;
