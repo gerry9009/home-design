@@ -14,7 +14,7 @@
 \*------------------------------------*/
 
 .header--container {
-    height: 100px;
+    height: 75px;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-first);
 }
@@ -26,7 +26,7 @@
 }
 
 .header--logo img {
-    height: 110px; 
+    height: 90px; 
 }
 
 #header--menu__toggle {
@@ -81,7 +81,7 @@
 .header--menu__box {
     background-color: var(--color-first);
     position: fixed;
-    top: 90px;
+    top: 75px;
     width: 100%;
     right: 0px;
     height: 0;
@@ -133,7 +133,7 @@
 
 .menu--btn:hover {
     background-color: var(--color-fifth);
-    transition-duration: .6s;
+    transition-duration: .4s;
 }
 
 
@@ -167,6 +167,7 @@
 @media screen and (min-width: 992px) { 
     .header--nav {
         height: 100%;
+        ;
     }
     
     #header--menu__toggle {
@@ -367,7 +368,7 @@
 
 
 .home--right {
-    padding: 8vh 0;
+    padding: 5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +376,7 @@
 
 .right--pics {
     display: grid;
-    width: 95%;
+    width:  100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: 

@@ -38,16 +38,20 @@
 /*------------------------------------*\
   #MODIFIERS
 \*------------------------------------*/
-
+/* Small devices (landscape phones, 576px and up */
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
-  .main {
-      padding-top:  7vh;        
-  }
-
   .footer {
     padding: 1rem 2rem 3rem;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+  .main {
+    padding-top:  3vh;        
   }
 
 }

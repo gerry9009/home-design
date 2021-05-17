@@ -37,8 +37,8 @@
 :root {
     --color-white: #fff;
     --color-black: #000;
-    --color-gray: #b79f6e;
-    --color-first: #c9bda2;
+    --color-gray: #b79f6e; 
+    --color-first: #b28530; /* c9bda2    LOGO: B28530*/
     --color-second: #4A5F71;   /*345995*/
     --color-third: #03cea4;
     --color-fourth: #fb4d3d;
