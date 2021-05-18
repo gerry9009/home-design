@@ -19,21 +19,29 @@
 
 <header id="header" class="header">
     <div class="header--container">
+        <a href="#" class="header--logo">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+        <!-- it need some design and solution
+        <div class="header--search">
+            <input type="text" placeholder="What are you looking for?" name="search" id="search" autocomplete="off">
+            <input class="search--btn" type="submit" value="search">
+            <label for="search"></label>
+        </div>
+        -->
         <nav class="header--nav">
-            <a href="#" class="header--logo">
-                <img src="./assets/logo.png" alt="logo">
-            </a>
             <div class="header--menu">
                 <input type="checkbox" name="hamburger" id="header--menu__toggle">
                 <label tabindex="0" for="header--menu__toggle" class="header--menu__btn">
                     <span class="header--menu__lines"></span>
                 </label>
                 <ul class="header--menu__box">
-                    <li class="header--menu__item"><a href="./index.html#home">Home</a></li>
-                    <li class="header--menu__item"><a href="./index.html#rooms">Rooms</a></li>
-                    <li class="header--menu__item"><a href="./index.html#inspiration">Inspiration</a></li>
-                    <li class="header--menu__item"><a href="./index.html#contact">Contact</a></li>
-                    <li class="header--menu__item"><a href="./index.html#getapp">Get App</a></li>
+                    <li class="header--menu__item"><a href="./index.html#home" class="menu--nav">Home</a></li>
+                    <li class="header--menu__item"><a href="./index.html#rooms" class="menu--nav">Rooms</a></li>
+                    <li class="header--menu__item"><a href="./index.html#inspiration" class="menu--nav">Inspiration</a></li>
+                    <li class="header--menu__item"><a href="./index.html#contact" class="menu--nav">Contact</a></li>
+                    <li class="header--menu__item"><a href="./index.html#getapp" class="menu--nav">Get App</a></li>
+                    <li class="header--menu__item"><a href="./index.html#webshop" class="menu--nav">Shop now</a></li>
                     <li class="header--menu__item menu--btn__container">
                         <a href="#login"><div class="menu--btn">Login</div></a>
                         <a href="#signin"><div class="menu--btn">Sign in</div></a>      
@@ -63,7 +71,7 @@
                 Dicta earum ut sequi, nemo nihil tempore, expedita, consequuntur odio
             </p>
             <div class="left--search">
-                <input type="text" placeholder="What are you looking for?" name="search" id="search" autocomplete="off">
+                <input type="text" placeholder="What are you looking for?" name="search" id="search-left" autocomplete="off">
                 <input class="submitBtn" type="submit" value="search">
                 <label for="search"></label>
             </div>
@@ -381,12 +389,12 @@
 
                 <div class="contact--form__formbox">
                     
-                    <textarea id="message" name="user_message" required=""></textarea>
-                    <label for="message">Enter text here ...</label>
+                    <textarea id="message" name="user_message" required="" placeholder="Enter text here ..."></textarea>
+                    <label for="message"></label>
                     
                 </div>
 
-                <input class="submitBtn" type="submit" id="submit" value="submit">
+                <input class="inspiration--btn" type="submit" id="submit" value="Submit">
 
             </form>
         </div>
