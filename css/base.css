@@ -37,24 +37,24 @@
 :root {
     --color-white: #fff;
     --color-black: #000;
-    --color-gray: #a39069; 
-    --color-first: #b28530; /* c9bda2    LOGO: B28530*/
+    --color-gray: #a5a1a1; 
+    --color-first: #d3cbc1; /* c9bda2    LOGO: B28530*/
     --color-second: #231f20;   /*345995   blue, it was--#4A5F71*/
     --color-third: #03cea4;
-    --color-fourth: #fb4d3d;
-    --color-fifth: #ca1551;  /* */
-    --color-first-pale: #eac33569; /* eac33569 */
-    --color-first-shadow: #eac33534;
+    --color-fourth: #f5cac3;
+    --color-fifth: #ca1551;
     --color-white-dirty: #909cc2;
 
+    --color-light-gray: #b3b3b3;
+
     --color-background: #eeeeee;  /* #231f20  #eeeeee*/
-    --color-background-foot: #ececec; 
+    --color-background-foot: #d1d1d1; 
     
-    --color-livingroom: #f6bd60;
-    --color-kitchen: #f7ede2;
-    --color-bedroom: #f28482;
-    --color-bathroom: #5ec0eb;
-    --color-terrace: #f5cac3;
+    --color-livingroom: #3b3c38 ;  /*#3b3c38   #f6bd60 */
+    --color-kitchen: #363434;   /*#efecec  #f7ede2           */
+    --color-bedroom: #3b3c38;   /*#5c5757*/
+    --color-bathroom: #363434;  /*#363434*/
+    --color-terrace: #3b3c38;
 }
 
 /*------------------------------------*\
@@ -78,8 +78,10 @@ h1 {
 }
 
 h2 {                                    
-  font-weight:                          700;
-  font-size:                            2.4rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 h3 {                                    

@@ -22,30 +22,45 @@
         <a href="#" class="header--logo">
             <img src="./assets/logo.png" alt="logo">
         </a>
-        <!-- it need some design and solution
-        <div class="header--search">
-            <input type="text" placeholder="What are you looking for?" name="search" id="search" autocomplete="off">
-            <input class="search--btn" type="submit" value="search">
-            <label for="search"></label>
-        </div>
-        -->
+        
         <nav class="header--nav">
             <div class="header--menu">
                 <input type="checkbox" name="hamburger" id="header--menu__toggle">
                 <label tabindex="0" for="header--menu__toggle" class="header--menu__btn">
                     <span class="header--menu__lines"></span>
                 </label>
+
                 <ul class="header--menu__box">
+                   
+                    <li class="header--menu__item search--container">
+                        <div class="header--search">
+                            <form action="#searchAction">
+                            <input
+                                type="text"
+                                placeholder="Search for luxury products"
+                                name="search"
+                                id="search"
+                                autocomplete="off"
+                                required="required"
+                            />
+                            <label for="search"></label>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </li>
+
                     <li class="header--menu__item"><a href="./index.html#home" class="menu--nav">Home</a></li>
                     <li class="header--menu__item"><a href="./index.html#rooms" class="menu--nav">Rooms</a></li>
                     <li class="header--menu__item"><a href="./index.html#inspiration" class="menu--nav">Inspiration</a></li>
                     <li class="header--menu__item"><a href="./index.html#contact" class="menu--nav">Contact</a></li>
                     <li class="header--menu__item"><a href="./index.html#getapp" class="menu--nav">Get App</a></li>
                     <li class="header--menu__item"><a href="./index.html#webshop" class="menu--nav">Shop now</a></li>
+                    
                     <li class="header--menu__item menu--btn__container">
                         <a href="#login"><div class="menu--btn">Login</div></a>
                         <a href="#signin"><div class="menu--btn">Sign in</div></a>      
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -59,50 +74,25 @@
 <main class="main">
 
 <!-- ------------- HOME  ------------- -->
-    <section class="home" id="home">
-        <div class="home--left">
-            <div class="left--title">
-                <h2>Luxury Home Design</h2>
+    <section class="home" id="home"> 
+        <div class="home-container">
+            <div class="home-pic">
+                <img src="./assets/mainpics4.jpg" alt="luxury funiture">
             </div>
-            <p class="left--desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Quam nihil animi reiciendis nulla necessitatibus vero facilis 
-                aut temporibus aliquid maxime doloremque, pariatur ipsam mollitia. 
-                Dicta earum ut sequi, nemo nihil tempore, expedita, consequuntur odio
-            </p>
-            <div class="left--search">
-                <input type="text" placeholder="What are you looking for?" name="search" id="search-left" autocomplete="off">
-                <input class="submitBtn" type="submit" value="search">
-                <label for="search"></label>
-            </div>
-            <nav class="left--soc">
-                <a href="./index.html#facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="./index.html#twitter"><i class="fab fa-twitter"></i></a>
-                <a href="./index.html#instagram"><i class="fab fa-instagram"></i></a>
-                <a href="./index.html#youtube"><i class="fab fa-youtube"></i></a>
-            </nav>
-        </div>
-
-        <div class="home--right">
-            <div class="right--pics">
-                <a class="right--grid1" href="#design">
-                    <img class="right--pics__main" src="./assets/mainpics.jpg" alt="This is a fancy room">
-                    <div class="grid--overlay grid--overlay__top">
-                        <div class="grid--overlay__text">Find your perfect design</div>
-                    </div>
-                </a>
-                <a class="right--grid2" href="#solution">
-                    <img class="right--pics__small" src="./assets/mainpics2.jpg" alt="This is a fancy room">
-                    <div class="grid--overlay grid--overlay__right">
-                        <div class="grid--overlay__text">Comfortable solution</div>
-                    </div>
-                </a>
-                <a class="right--grid3" href="#materials">
-                    <img class="right--pics__small" src="./assets/mainpics3.jpg" alt="This is a fancy room">
-                    <div class="grid--overlay grid--overlay__bottom">
-                        <div class="grid--overlay__text">Classic materials</div>
-                    </div>
-                </a>
+            <div class="home-description">
+                <div class="home-title">
+                    <h2>New season</h2>
+                </div>
+                <p class="home-descrpit">
+                    Refresh your home with the Luxury Home Design collection
+                </p>
+                <a href="./index.html#webshop" class="home-btn">Shop now</a>
+                <nav class="home-social">
+                    <a href="./index.html#facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="./index.html#twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="./index.html#instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="./index.html#youtube"><i class="fab fa-youtube"></i></a>
+                </nav>
             </div>
         </div>
     </section>
@@ -111,7 +101,7 @@
 
 <!-- ------------- ROOMS  ------------- -->
     <section class="rooms" id="rooms">
-        <h2>Elegant style for your rooms</h2>
+        <h2>Shop by Category</h2>
         <div class="rooms--slidershow">
             <div class="rooms--slides">
                 <input type="radio" name="radio" id="slides--radio1" checked>
