@@ -484,8 +484,8 @@
 }
 
 .rooms--slidershow {
-    height: 80vh;
-    width: 90%;
+    height: 60vh;
+    width: 95%;
     overflow: hidden;
     padding-top: 2rem;
 }
@@ -494,27 +494,28 @@
     width: 500%;
     height: 100%;
     display: flex;
+    position: relative;
 }
 
 .room--navigation {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 78%;
-    left: 10%;
+    left: 0;
+    top: -10px;
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 8%;
 }
 
 
 .room--navigation__bar {
     width: 10px;
     height: 10px;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-light-gray);
     display: block;
     cursor: pointer;
-    background-color: var(--color-white);
+    background-color: var(--color-light-gray);
 }
 
 .slides--slide {
@@ -600,12 +601,22 @@ input[type="radio"] {
 
 .slides--slide__img {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 
 .slide--title {
     padding-left: 6vw;
     padding-top: 2vh;
+    position: relative;
+    top: -16vh;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 16vh;
+}
+
+.slides--slide a:hover {
+    text-decoration: underline var(--color-white);
 }
 
 .slides--slide .slide--title h4, p {
@@ -631,39 +642,15 @@ h4 {
     background-color: var(--color-white);
 }
 
-.slide--title__livingroom {
-    background-color: var(--color-livingroom);
-}
-
-.slide--title__kitchen {
-    background-color: var(--color-kitchen);
-}
-
-.slide--title__bedroom {
-    background-color: var(--color-bedroom);
-}
-
-.slide--title__bathroom {
-    background-color: var(--color-bathroom);
-}
-
-.slide--title__terrace {
-    background-color: var(--color-terrace);
-}
-
-
-.slides--slide a:hover {
-    text-decoration: underline var(--color-white);
-}
-
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
-    
+    .rooms--slidershow {
+        height: 70vh;
+    }
+
     .room--navigation {
-        top: 80%;
-        left: 10%;
-        width: 15%;
+        width: 6%;
     }
 
     h4 {
@@ -678,18 +665,17 @@ h4 {
     
     .slide--title__arrow {
         font-size: .8rem;
-        margin-top: 25px;
     }
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
+    .rooms--slidershow {
+        height: 80vh;
+    }
+
     .rooms > h2 {
         letter-spacing: 3px;
         font-size: 2rem;
-    }
-
-    .slide--title {
-        padding-top: 1vh;
     }
 
     h4 {
@@ -701,15 +687,10 @@ h4 {
         margin-top: 12px;
     }
     
-    .slide--title__arrow {
-        margin-top: 1vh;
-    }
 
     .room--navigation {
-        width: 12%;
+        width: 4%;
     }
-
-
     
     .room--navigation__bar {
         width: 11px;
@@ -720,7 +701,8 @@ h4 {
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
     .rooms--slidershow {
-        height: 90vh;
+        height: 85vh;
+        width: 85%;
     }
 
     h4 {
@@ -735,8 +717,9 @@ h4 {
     
     .slide--title__arrow {
         font-size: .8rem;
-        margin-top: 28px;
     }
+
+  
 
 }
  
