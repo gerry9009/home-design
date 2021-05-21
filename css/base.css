@@ -48,10 +48,10 @@
     --color-light-gray: #b3b3b3;
 
     --color-background: #eeeeee;  /* #231f20  #eeeeee*/
-    --color-background-foot: #d1d1d1; 
+    --color-background-foot: #444444; 
     
     --color-zeus: #3b3c38 ;  /*#3b3c38   #f6bd60 */
-    --color-kitchen: #363434;   /*#efecec  #f7ede2           */
+    --color-white-dirty: #dfdede;   /*#efecec  #f7ede2           */
 
 }
 
