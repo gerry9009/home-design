@@ -262,7 +262,9 @@
  
 
 /**-----------------------------------------------------------------------------------**/
-/*--X-------------------------------------------------------------------------------X--*/
+
+
+
 /**-----------------------------------------------------------------------------------**/
 
 /*------------------------------------*\
@@ -393,11 +395,6 @@
     animation-fill-mode: forwards;
     transform: scale(1.1);
 }
-
-
-
-
-
 
 
 /*------------------MEDIA------------------*/
@@ -886,7 +883,7 @@ h4 {
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-second);
-    border: 1px solid var(--color-white-dirty);
+    border: 1px solid var(--color-light-gray);
 }
 
 .inspiration--btn:hover {
@@ -1217,6 +1214,8 @@ h4 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        width: 85%;
+        height: 80vh;
     }
     .getapp--container__pic {
         width: 65%;
@@ -1236,7 +1235,7 @@ h4 {
     }
 
     .desc__store--container > a > i {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
 }
@@ -1246,6 +1245,7 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        height: 55vh;
     }
 
     .getapp--container__pic {
@@ -1268,7 +1268,7 @@ h4 {
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
     .getapp--container {
-        height: 70vh;
+        height: 75vh;
     }
 }
  
@@ -1277,8 +1277,160 @@ h4 {
 /*  -X---------------------- GETAPP ----------------------X-  */
 /**---------------------------------------------------------------**/
 
+/**----------------------------------------------------------------**/
+/*  ------------------------ SOCIALMEDIA PICS ------------------------  */
+.socialpics {
+    border-top: 1px solid var(--color-first);
+    margin-top: 3rem;
+    padding: 100px 0 4rem;
+}
+
+.socialpics h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.socialpics p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+    line-height: 2rem;
+}
+
+
+.pics-container {
+    display: grid;
+    grid-template-rows: repeat(6, 25vh);
+    grid-template-areas: 
+    "one four" 
+    "three five" 
+    "two two" 
+    "two two"
+    "six seven" 
+    "eight nine"
+    ;
+    gap: 1rem;
+}
+
+
+.socialpics-item {
+    position: relative;
+}
+
+.socialpics-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.socialpics-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 0;
+    bottom: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    overflow: hidden;
+    width: 100%;
+    transition: .5s;
+}
+
+.socialpics-item:hover .socialpics-overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.socialpics-overlay-text {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.grid1 {
+    grid-area: one;
+}
+
+.grid2 {
+    grid-area: two;
+}
+
+.grid3 {
+    grid-area: three;
+}
+
+.grid4 {
+    grid-area: four;
+}
+
+.grid5 {
+    grid-area: five;
+}
+
+.grid6 {
+    grid-area: six;
+}
+
+.grid7 {
+    grid-area: seven;
+}
+
+.grid8 {
+    grid-area: eight;
+}
+
+.grid9 {
+    grid-area: nine;
+}
+
+/*------------------MEDIA------------------*/
+/* Small devices (landscape phones, 576px and up */
+@media screen and (min-width: 576px) { 
+    .pics-container {
+        grid-template-rows: repeat(2, 15vh);
+        grid-template-columns: 15% 15% 40% 15% 15%;
+        grid-template-areas: 
+        "one two three four five"
+        "six seven three eight nine"
+        ;
+        gap: 3px;
+    }    
+    .socialpics-item img {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+    }
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (min-width: 768px) { 
+    .socialpics h2 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    }
+
+    .pics-container {
+        grid-template-rows: repeat(2, 20vh);
+    }
+}
+ /* Large devices (desktops, 992px and up) */
+ @media screen and (min-width: 992px) { 
+    .pics-container {
+        grid-template-rows: repeat(2, 30vh);
+    }
+}
+
+
+
+
+/*  -X---------------------- SOCIALMEDIA PICS ----------------------X-  */
+/**---------------------------------------------------------------**/
+
 /**-----------------------------------------------------------------------------------**/
-/*--X-------------------------------------------------------------------------------X--*/
+
 /**-----------------------------------------------------------------------------------**/
 
 /*------------------------------------*\
