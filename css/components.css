@@ -79,7 +79,7 @@
 }
 
 .header--menu__box {
-    background-color: var(--color-second);
+    background-color: var(--color-zeus);
     position: absolute;
     top: 80px;
     width: 100%;
@@ -180,7 +180,8 @@
 }
 
 .menu--btn:hover {
-    background-color: var(--color-third);
+    background-color: var(--color-white);
+    color: var(--color-black);
     transition-duration: .4s;
 }
 
@@ -754,136 +755,101 @@ h4 {
 
 .inspiration h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-.inspiration--container {
-    width: 90%;
+.inspiration-container {
+    width: 95%;
     margin: 1.5rem 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.container--product {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    max-height: 450px;
+.inspiration-items {
+    width: 95%;
+    max-width: 300px;
+    height: 50vh;
+    max-height: 360px;
     display: flex;
     flex-direction: column;
-    border-radius: 2%;
     align-items: center;
     margin-top: 1.5rem;
-    box-shadow: 1px 2px 15px 2px var(--color-gray);
+    position: relative;
 }
 
-.container--product__right {
-    border-top-right-radius: 20%;
-}
 
-.product--img {
+.inspiration-item--img {
     display: flex;
-    background-color: var(--color-gray);
-    max-width: 550px;
-    max-height: 550px;
+    overflow: hidden;
+    height: 100%;  
 }
 
-.product--img__left {
-    border-bottom-left-radius: 20%;
-    justify-content: flex-end;
-}
-
-.product--img__right {
-    border-top-right-radius: 20%;
-    justify-content: flex-start;
-}
-
-.product--img img {
-    width: 95%;
-    height: 95%;  
-}
-
-.product--img img:hover {
-    transform: scale(1.01);
-    transition: all .8s ease;
-}
-
-
-.product--img__left img {
-    border-bottom-left-radius: 20%;
-}
-
-.product--img__right img {
-    border-top-right-radius: 20%;
-
-}
-
-.product--desc {
+.inspiration-item--img img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
-.product--prod {
-    margin-top: 1.6rem;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
+.inspiration-item--products {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
 }
 
-.container--product a:first-of-type {
-    border-bottom: 1px solid var(--color-black);
-}
-
-.product--prod i {
-    width: 25%;
-    font-size: 1.2rem;
-    color: var(--color-black);
-    border-right: 1px solid var(--color-white-dirty);
-    text-align: center;
-}
-
-.product--prod h5 {
-    font-size: .8rem;
-    width: 40%;
-    text-align: center;
-    color: var(--color-second);
-}
-
-.product--prod p {
-    font-size: .7rem;
-    color: var(--color-second);
-}
-
-.product--prod span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 12vw;
-    height: 3vh;
-    max-width: 65px;
-    max-height: 25px;
-    border: 1px solid var(--color-second);
-    font-size: .8rem;
-    padding: .5rem 1.2rem;
+.inspiration-item--products h4 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: var(--color-white);
+    margin-top: 1rem;
+    position: relative;
+    left: 5%;
+    text-transform: uppercase;
     font-weight: 500;
-    color: var(--color-second);
-    transition-duration: .4s;
 }
 
-.product--prod span:hover {
-    background-color: var(--color-second);
+.inspiration-item--products h4::after {
+    content: "";
+    width: 20%;
+    max-width: 50px;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+
+.product {
+    width: 75%;
+    position: absolute;
+    bottom: 5%;
+    left: 12.5%;
+}
+
+.product span {
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid var(--color-white);
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: .6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: var(--color-white);
 }
 
-.inspiration--btn {
+.product span:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.inspiration-btn {
     height: 2.5rem;
     width: 7rem;
     cursor: pointer;
@@ -893,7 +859,7 @@ h4 {
     border: 1px solid var(--color-light-gray);
 }
 
-.inspiration--btn:hover {
+.inspiration-btn:hover {
     transition-duration: .3s;
     border: 1px solid var(--color-second);
 }
@@ -901,55 +867,16 @@ h4 {
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
-    .container--product {
-        height: 100%;
-        min-height: 500px;
-    } 
-    
-    .product--prod i {
-        width: 20%;
-        font-size: 1.5rem;
-    }
-
-    .product--prod h5 {
-        font-size: 1rem;
-        width: 30%;
-    }
-
-    .product--prod p {
-        font-size: .8rem;
-    }
-}
- /* Medium devices (tablets, 768px and up) */
- @media screen and (min-width: 768px) { 
-    .inspiration h2 {
-        letter-spacing: 3px;
-        font-size: 2rem;
-    }
-}
- /* Large devices (desktops, 992px and up) */
- @media screen and (min-width: 992px) { 
-    .inspiration--container {
-        width: 95%;
+    .inspiration-container {
         flex-direction: row;
     }
 
-    .container--product {
-        max-width: 500px;
+    .inspiration-items {
+        margin: 1.5rem;
     }
+
 }
 
- 
- /* Extra large devices (large desktops, 1200px and up) */
- @media screen and (min-width: 1200px) {
-    .inspiration--container {
-        width: 85%;
-    }
-    
-    .container--product {
-        max-width: 550px;
-    }
-}
 
 /*  -X---------------------- INSPIRATION ----------------------X-  */
 /**---------------------------------------------------------------**/
@@ -965,30 +892,30 @@ h4 {
     justify-content: center;
 }
 
-.contact--title {
+.contact-title {
     width: 90%;
 }
 
-.contact--title h2 {
+.contact-title h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.contact--title p {
+.contact-title p {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: var(--color-black);
     line-height: 2rem;
 }
 
-.contact--form {
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.contact--form__formbox {
+.contact-form--formbox {
     font-size: .9rem;
     outline: none;
     display: flex;
@@ -998,7 +925,7 @@ h4 {
     margin: 1rem 0;
 }
 
-.contact--form__formbox input {
+.contact-form--formbox input {
     color: var(--color-second);
     font-size: .8rem;
     font-weight: 700;
@@ -1008,7 +935,7 @@ h4 {
     background-color: var(--color-background);
 }
 
-.contact--form__formbox label {
+.contact-form--formbox label {
     color: var(--color-black);
     font-weight: 700;
     position: absolute;
@@ -1019,7 +946,7 @@ h4 {
     transition: .6s;
 }
 
-.contact--form select {
+.contact-form select {
     margin: 1.5rem 0;
     border: none;
     border-bottom: 1px solid black;
@@ -1029,13 +956,13 @@ h4 {
 }
 
 
-.contact--form__formbox option {
+.contact-form--formbox option {
     font-weight: 500;
     font-size: .8rem;
     color: var(--color-black);
 }
 
-.contact--form__formbox textarea {
+.contact-form--formbox textarea {
     height: 12vh;
     border-bottom: 1px solid var(--color-black);
     border-left: 1px solid var(--color-black);
@@ -1046,20 +973,20 @@ h4 {
     background-color: var(--color-background);
 }
 
-.contact--form__formbox input:focus,
-.contact--form__formbox textarea:focus  {
+.contact-form--formbox input:focus,
+.contact-form--formbox textarea:focus  {
     outline: none;
     border-bottom: 2px solid var(--color-second);
 }
 
-.contact--form__formbox input:focus ~ label,
-.contact--form__formbox input:valid ~ label,
-.contact--form__formbox textarea:valid ~ label {
+.contact-form--formbox input:focus ~ label,
+.contact-form--formbox input:valid ~ label,
+.contact-form--formbox textarea:valid ~ label {
     top: -1.8rem;
     font-size: .7rem;
 }
 
-.contact--form input[type="submit"] {
+.contact-form input[type="submit"] {
     margin-top: 3rem;
     width: 40%;
     min-width: 80px;
@@ -1071,48 +998,49 @@ h4 {
 /*------------------MEDIA------------------*/
 /* Small devices (landscape phones, 576px and up */
 @media screen and (min-width: 576px) { 
-    .contact--form__formbox, .contact--form__formbox::placeholder {
+    .contact-form--formbox, 
+    .contact-form--formbox::placeholder {
         font-size: 1.2rem;
     }
     
-    .contact--form__formbox input {
+    .contact-form--formbox input {
         color: var(--color-second);
         font-size: 1.2rem;
     }
 
-    .contact--form__formbox input:focus ~ label,
-    .contact--form__formbox textarea:focus ~ label,
-    .contact--form__formbox input:valid ~ label,
-    .contact--form__formbox textarea:valid ~ label {
+    .contact-form--formbox input:focus ~ label,
+    .contact-form--formbox textarea:focus ~ label,
+    .contact-form--formbox input:valid ~ label,
+    .contact-form--formbox textarea:valid ~ label {
     font-size: 1rem;
     }
 
-    .contact--form__formbox option {
+    .contact-form--formbox option {
         font-size: 1.2rem;
     }
 }
  /* Medium devices (tablets, 768px and up) */
  @media screen and (min-width: 768px) { 
     
-    .contact--title {
+    .contact-title {
         width: 80%;
     }
 
-    .contact--title h2 {
+    .contact-title h2 {
         letter-spacing: 3px;
         font-size: 2rem;
     }
 }
  /* Large devices (desktops, 992px and up) */
  @media screen and (min-width: 992px) { 
-    .contact--title {
+    .contact-title {
         width: 75%;
     }
 }
  
  /* Extra large devices (large desktops, 1200px and up) */
  @media screen and (min-width: 1200px) {
-    .contact--title {
+    .contact-title {
         width: 70%;
     }
 }
@@ -1210,7 +1138,8 @@ h4 {
 }
 
 .desc-items > a:hover {
-    color: var(--color-third);
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 
 /*------------------MEDIA------------------*/
@@ -1260,7 +1189,6 @@ h4 {
     .getapp-container--pic {
         width: 65%;
     }
-
 
     .getapp-container--desc {
         background-color: var(--color-zeus);
