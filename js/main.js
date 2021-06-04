@@ -1,7 +1,7 @@
 
 function checkBoxValue(win) {
     if (win.matches) {
-      document.getElementById("header--menu__toggle").checked = false;
+      document.getElementById("header-menu__toggle").checked = false;
     }
   }
   
