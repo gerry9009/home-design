@@ -414,7 +414,7 @@
     }
 
     .home-pic img {
-        height: 100vh;
+        width: 100vw;
     }
 
     .home-title h2 {
