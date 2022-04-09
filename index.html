@@ -1,618 +1,774 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Design</title>
     <!------------ stylesheet ------------>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
     <!------------ fontawesome ------------>
-    <script src="https://kit.fontawesome.com/4438e565ec.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- -------------------------------- HEADER  -------------------------------- -->
+    <script
+      src="https://kit.fontawesome.com/4438e565ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -------------------------------- HEADER  -------------------------------- -->
 
-<header id="header" class="header">
-    <div class="header-container">
+    <header id="header" class="header">
+      <div class="header-container">
         <a href="#" class="header-logo">
-            <img src="./assets/logo.png" alt="logo">
+          <img src="./assets/logo.png" alt="logo" />
         </a>
-        
+
         <nav class="header-nav">
-            <div class="header-menu">
-                <input type="checkbox" name="hamburger" id="header-menu__toggle">
-                <label tabindex="0" for="header-menu__toggle" class="header-menu__btn">
-                    <span class="header-menu__lines"></span>
-                </label>
+          <div class="header-menu">
+            <input type="checkbox" name="hamburger" id="header-menu__toggle" />
+            <label
+              tabindex="0"
+              for="header-menu__toggle"
+              class="header-menu__btn"
+            >
+              <span class="header-menu__lines"></span>
+            </label>
 
-                <ul class="header-menu__box">
-                   
-                    <li class="header-menu__item header-search-container">
-                        <div class="header-search">
-                            <form action="#searchAction">
-                            <input
-                                type="text"
-                                placeholder="Search for luxury products"
-                                name="search"
-                                id="search"
-                                autocomplete="off"
-                                required="required"
-                            />
-                            <label for="search"></label>
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                    </li>
+            <ul class="header-menu__box">
+              <li class="header-menu__item header-search-container">
+                <div class="header-search">
+                  <form action="#searchAction">
+                    <input
+                      type="text"
+                      placeholder="Search for luxury products"
+                      name="search"
+                      id="search"
+                      autocomplete="off"
+                      required="required"
+                    />
+                    <label for="search"></label>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </li>
 
-                    <li class="header-menu__item"><a href="./index.html#home" class="menu--nav">Home</a></li>
-                    <li class="header-menu__item"><a href="./index.html#rooms" class="menu--nav">Rooms</a></li>
-                    <li class="header-menu__item"><a href="./index.html#inspiration" class="menu--nav">Inspiration</a></li>
-                    <li class="header-menu__item"><a href="./index.html#contact" class="menu--nav">Contact</a></li>
-                    <li class="header-menu__item"><a href="./index.html#getapp" class="menu--nav">Get App</a></li>
-                    <li class="header-menu__item"><a href="./index.html#socialpics" class="menu--nav">#homedesign</a></li>
-                    <li class="header-menu__item"><a href="./index.html#webshop" class="menu--nav">Shop now</a></li>
-                    
-                    <li class="header-menu__item menu-btn__container">
-                        <a href="#login"><div class="menu--btn">Login</div></a>
-                        <a href="#signin"><div class="menu--btn">Sign in</div></a>      
-                    </li>
+              <li class="header-menu__item">
+                <a href="./index.html#home" class="menu--nav">Home</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#rooms" class="menu--nav">Rooms</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#inspiration" class="menu--nav"
+                  >Inspiration</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#contact" class="menu--nav">Contact</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#getapp" class="menu--nav">Get App</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#socialpics" class="menu--nav"
+                  >#homedesign</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a href="./index.html#webshop" class="menu--nav">Shop now</a>
+              </li>
 
-                </ul>
-            </div>
+              <li class="header-menu__item menu-btn__container">
+                <a href="#login"><div class="menu--btn">Login</div></a>
+                <a href="#signin"><div class="menu--btn">Sign in</div></a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </div>    
-</header>
+      </div>
+    </header>
 
-<!-- -X--------------------------X--- HEADER  ---X--------------------------X- -->
+    <!-- -X--------------------------X--- HEADER  ---X--------------------------X- -->
 
-<!-- -------------------------------- MAIN SITE SECTION -------------------------------- -->
+    <!-- -------------------------------- MAIN SITE SECTION -------------------------------- -->
 
-<main class="main">
+    <main class="main">
+      <!-- ------------- HOME  ------------- -->
 
-<!-- ------------- HOME  ------------- -->
-    <section class="home" id="home"> 
+      <section class="home" id="home">
         <div class="home-container">
-            <div class="home-pic">
-                <img src="./assets/mainpics4.jpg" alt="luxury funiture">
+          <div class="home-pic">
+            <img src="./assets/mainpics4.jpg" alt="luxury funiture" />
+          </div>
+          <div class="home-description">
+            <div class="home-title">
+              <h2>New season</h2>
             </div>
-            <div class="home-description">
-                <div class="home-title">
-                    <h2>New season</h2>
-                </div>
-                <p class="home-descrpit">
-                    Refresh your home with the Luxury Home Design collection
-                </p>
-                <a href="./index.html#webshop" class="home-btn">Shop now</a>
-                <nav class="home-social">
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                </nav>
-            </div>
+            <p class="home-descrpit">
+              Refresh your home with the Luxury Home Design collection
+            </p>
+            <a href="./index.html#webshop" class="home-btn">Shop now</a>
+            <nav class="home-social">
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.twitter.com"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </nav>
+          </div>
         </div>
-    </section>
-<!-- -X----------X--- HOME  ---X----------X- -->
+      </section>
+      <!-- -X----------X--- HOME  ---X----------X- -->
 
+      <!-- ------------- ROOMS  ------------- -->
 
-<!-- ------------- ROOMS  ------------- -->
-    <section class="rooms" id="rooms">
+      <section class="rooms" id="rooms">
         <h2>Shop by Category</h2>
-        <div class="rooms-slidershow"> 
-            <div class="rooms-slides">
-                <input type="radio" name="radio" id="slides-radio1" checked>
-                <input type="radio" name="radio" id="slides-radio2">
-                <input type="radio" name="radio" id="slides-radio3">
-                <input type="radio" name="radio" id="slides-radio4">
-                <input type="radio" name="radio" id="slides-radio5">
-                <div class="room-navigation"> 
-                    <label for="slides-radio1" class="room-navigation__bar room-navigation__bar1"></label>
-                    <label for="slides-radio2" class="room-navigation__bar room-navigation__bar2"></label>
-                    <label for="slides-radio3" class="room-navigation__bar room-navigation__bar3"></label>
-                    <label for="slides-radio4" class="room-navigation__bar room-navigation__bar4"></label>
-                    <label for="slides-radio5" class="room-navigation__bar room-navigation__bar5"></label>
-                </div>
-                <div class="slides-slide slide-title__livingroom slides-slide__main">
-                    <img src="./assets/rooms-livingroom.jpg" alt="livingroom" class="slides-slide__img">
-                    <a href="#LivingRoom">
-                        <div class="slide-title ">
-                            <h4>Living Room</h4>
-                            <p class="slide-title__par">Shop now</p>
-                            <i class="fas fa-arrow-right slide-title__arrow"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="slides-slide slide-title__kitchen">
-                    <img src="./assets/rooms-kitchen.jpg" alt="kitchen" class="slides-slide__img">
-                    <a href="#Kitchen">
-                        <div class="slide-title ">
-                            <h4>Kitchen</h4>
-                            <p class="slide-title__par">Shop now</p>
-                            <i class="fas fa-arrow-right slide-title__arrow"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="slides-slide slide-title__bedroom">
-                    <img src="./assets/rooms-bedroom.jpg" alt="bedroom" class="slides-slide__img">
-                    <a href="#Bedroom">
-                        <div class="slide-title ">
-                            <h4>Bedroom</h4>
-                            <p class="slide-title__par">Shop now</p>
-                            <i class="fas fa-arrow-right slide-title__arrow"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="slides-slide slide-title__bathroom">
-                    <img src="./assets/rooms-bathroom.jpg" alt="bathroom" class="slides-slide__img">
-                    <a href="#Bathroom" >
-                        <div class="slide-title ">
-                            <h4>Bathroom</h4>
-                            <p class="slide-title__par">Shop now</p>
-                            <i class="fas fa-arrow-right slide-title__arrow"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="slides-slide slide-title__terrace">
-                    <img src="./assets/rooms-terrace.jpg" alt="terrace" class="slides-slide__img">
-                    <a href="#Terrace">
-                        <div class="slide-title ">
-                            <h4>Terrace</h4>
-                            <p class="slide-title__par">Shop now</p>
-                            <i class="fas fa-arrow-right slide-title__arrow"></i>
-                        </div>
-                    </a>
-                </div>
+        <div class="rooms-slidershow">
+          <div class="rooms-slides">
+            <input type="radio" name="radio" id="slides-radio1" checked />
+            <input type="radio" name="radio" id="slides-radio2" />
+            <input type="radio" name="radio" id="slides-radio3" />
+            <input type="radio" name="radio" id="slides-radio4" />
+            <input type="radio" name="radio" id="slides-radio5" />
+            <div class="room-navigation">
+              <label
+                for="slides-radio1"
+                class="room-navigation__bar room-navigation__bar1"
+              ></label>
+              <label
+                for="slides-radio2"
+                class="room-navigation__bar room-navigation__bar2"
+              ></label>
+              <label
+                for="slides-radio3"
+                class="room-navigation__bar room-navigation__bar3"
+              ></label>
+              <label
+                for="slides-radio4"
+                class="room-navigation__bar room-navigation__bar4"
+              ></label>
+              <label
+                for="slides-radio5"
+                class="room-navigation__bar room-navigation__bar5"
+              ></label>
             </div>
+            <div
+              class="slides-slide slide-title__livingroom slides-slide__main"
+            >
+              <img
+                src="./assets/rooms-livingroom.jpg"
+                alt="livingroom"
+                class="slides-slide__img"
+              />
+              <a href="#LivingRoom">
+                <div class="slide-title">
+                  <h4>Living Room</h4>
+                  <p class="slide-title__par">Shop now</p>
+                  <i class="fas fa-arrow-right slide-title__arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="slides-slide slide-title__kitchen">
+              <img
+                src="./assets/rooms-kitchen.jpg"
+                alt="kitchen"
+                class="slides-slide__img"
+              />
+              <a href="#Kitchen">
+                <div class="slide-title">
+                  <h4>Kitchen</h4>
+                  <p class="slide-title__par">Shop now</p>
+                  <i class="fas fa-arrow-right slide-title__arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="slides-slide slide-title__bedroom">
+              <img
+                src="./assets/rooms-bedroom.jpg"
+                alt="bedroom"
+                class="slides-slide__img"
+              />
+              <a href="#Bedroom">
+                <div class="slide-title">
+                  <h4>Bedroom</h4>
+                  <p class="slide-title__par">Shop now</p>
+                  <i class="fas fa-arrow-right slide-title__arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="slides-slide slide-title__bathroom">
+              <img
+                src="./assets/rooms-bathroom.jpg"
+                alt="bathroom"
+                class="slides-slide__img"
+              />
+              <a href="#Bathroom">
+                <div class="slide-title">
+                  <h4>Bathroom</h4>
+                  <p class="slide-title__par">Shop now</p>
+                  <i class="fas fa-arrow-right slide-title__arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="slides-slide slide-title__terrace">
+              <img
+                src="./assets/rooms-terrace.jpg"
+                alt="terrace"
+                class="slides-slide__img"
+              />
+              <a href="#Terrace">
+                <div class="slide-title">
+                  <h4>Terrace</h4>
+                  <p class="slide-title__par">Shop now</p>
+                  <i class="fas fa-arrow-right slide-title__arrow"></i>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        
-    </section>
-<!-- -X----------X--- ROOMS  ---X----------X- -->
+      </section>
+      <!-- -X----------X--- ROOMS  ---X----------X- -->
 
-<!-- ------------- INSPIRATION  ------------- -->
-    <section class="inspiration" id="inspiration">
+      <!-- ------------- INSPIRATION  ------------- -->
+
+      <section class="inspiration" id="inspiration">
         <h2>Our products</h2>
         <div class="inspiration-container">
-
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration.jpg" alt="Design Pillow">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Pillow</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>  
-                    </a>
-                </div>           
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration.jpg" alt="Design Pillow" />
             </div>
-
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration2.jpg" alt="Design Shelf">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Shelf</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+            <div class="inspiration-item--products">
+              <h4>Design Pillow</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
             </div>
+          </div>
 
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration3.jpg" alt="Design Couch">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Couch</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration2.jpg" alt="Design Shelf" />
             </div>
-
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration4.jpg" alt="Design Armchair">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Armchair</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+            <div class="inspiration-item--products">
+              <h4>Design Shelf</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
             </div>
+          </div>
 
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration5.jpg" alt="Design Sculpture">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Sculpture</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration3.jpg" alt="Design Couch" />
             </div>
-
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration6.jpg" alt="Design Table">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Table</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+            <div class="inspiration-item--products">
+              <h4>Design Couch</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
             </div>
+          </div>
 
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration7.jpg" alt="Design Vase">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Vase</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration4.jpg" alt="Design Armchair" />
             </div>
-
-            <div class="inspiration-items">
-                <div class="inspiration-item--img">
-                    <img src="./assets/inspiration8.jpg" alt="Design Clock">
-                </div>
-                <div class="inspiration-item--products">
-                    <h4>Design Clock</h4>
-                    <a href="#product" class="product">
-                        <span>Shop Now</span>
-                    </a>
-                </div>           
+            <div class="inspiration-item--products">
+              <h4>Design Armchair</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
             </div>
+          </div>
 
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration5.jpg" alt="Design Sculpture" />
+            </div>
+            <div class="inspiration-item--products">
+              <h4>Design Sculpture</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration6.jpg" alt="Design Table" />
+            </div>
+            <div class="inspiration-item--products">
+              <h4>Design Table</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration7.jpg" alt="Design Vase" />
+            </div>
+            <div class="inspiration-item--products">
+              <h4>Design Vase</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="inspiration-items">
+            <div class="inspiration-item--img">
+              <img src="./assets/inspiration8.jpg" alt="Design Clock" />
+            </div>
+            <div class="inspiration-item--products">
+              <h4>Design Clock</h4>
+              <a href="#product" class="product">
+                <span>Shop Now</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <button class="inspiration-btn">Load more</button>   
-    </section>
-<!-- -X----------X--- INSPIRATION  ---X----------X- -->
+        <button class="inspiration-btn">Load more</button>
+      </section>
+      <!-- -X----------X--- INSPIRATION  ---X----------X- -->
 
+      <!-- ------------- CONTACT  ------------- -->
 
-<!-- ------------- CONTACT  ------------- -->
-    <section class="contact" id="contact">
-
+      <section class="contact" id="contact">
         <div class="contact-title">
-            <h2>What are you looking for?</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut corrupti quo id deserunt officia ab, accusantium, eius, inventore veritatis explicabo a pariatur.
-            </p>
-            <form 
-                class="contact-form"
-                action="https://formspree.io/f/mleajnge"
-                method="POST"
-            >
-      
-                <div class="contact-form--formbox">
-                    <input type="text" id="firstname" name="firstname" required="required" >
-                    <label for="firstname">First name</label>
-                </div>
+          <h2>What are you looking for?</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+            corrupti quo id deserunt officia ab, accusantium, eius, inventore
+            veritatis explicabo a pariatur.
+          </p>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mleajnge"
+            method="POST"
+          >
+            <div class="contact-form--formbox">
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required="required"
+              />
+              <label for="firstname">First name</label>
+            </div>
 
-                <div class="contact-form--formbox">
-                    <input type="text" id="lastname" name="lastname" required="required" >
-                    <label for="lastname">Last name</label>
-                </div>
-                
-                <div class="contact-form--formbox contact-form--email">
-                    <input type="email" id="email" name="email" required="required" placeholder="   ">
-                    <label for="email">Email</label>
-                </div>
+            <div class="contact-form--formbox">
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required="required"
+              />
+              <label for="lastname">Last name</label>
+            </div>
 
-                <select class="contact-form--formbox">
-                    <option disabled selected>Select current role</option>
-                    <option value="delivery">Delivery</option>
-                    <option value="ourservices">Our services</option>
-                    <option value="planners">Planners</option>
-                    <option value="feedback">Feedback and Product Rating and Reviews</option>
-                    <option value="return">Return policy</option>
-                    <option value="spare">Spare parts</option>
-                    <option value="guarantees">Guarantees</option>
-                </select>    
-            
+            <div class="contact-form--formbox contact-form--email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required="required"
+                placeholder="   "
+              />
+              <label for="email">Email</label>
+            </div>
 
-                <div class="contact-form--formbox">
-                    
-                    <textarea id="message" name="user_message" required="" placeholder="Enter text here ..."></textarea>
-                    <label for="message"></label>
-                    
-                </div>
+            <select class="contact-form--formbox">
+              <option disabled selected>Select current role</option>
+              <option value="delivery">Delivery</option>
+              <option value="ourservices">Our services</option>
+              <option value="planners">Planners</option>
+              <option value="feedback">
+                Feedback and Product Rating and Reviews
+              </option>
+              <option value="return">Return policy</option>
+              <option value="spare">Spare parts</option>
+              <option value="guarantees">Guarantees</option>
+            </select>
 
-                <input class="inspiration-btn" type="submit" id="submit" value="Submit">
+            <div class="contact-form--formbox">
+              <textarea
+                id="message"
+                name="user_message"
+                required=""
+                placeholder="Enter text here ..."
+              ></textarea>
+              <label for="message"></label>
+            </div>
 
-            </form>
+            <input
+              class="inspiration-btn"
+              type="submit"
+              id="submit"
+              value="Submit"
+            />
+          </form>
         </div>
-    </section>
-<!-- -X----------X--- CONTACT  ---X----------X- -->
+      </section>
+      <!-- -X----------X--- CONTACT  ---X----------X- -->
 
+      <!-- ------------- GET APP  ------------- -->
 
-<!-- ------------- GET APP  ------------- -->
-    <section class="getapp" id="getapp">
+      <section class="getapp" id="getapp">
         <div class="getapp-container">
-            <div class="getapp-container--pic">
-                <img src="./assets/getapp.jpg" alt="Order in mobile">
+          <div class="getapp-container--pic">
+            <img src="./assets/getapp.jpg" alt="Order in mobile" />
+          </div>
+          <div class="getapp-container--desc">
+            <h5>10% Cashback</h5>
+            <h3>Now You Can Order From Mobile</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing quis optr
+              minima?
+            </p>
+            <div class="desc-items">
+              <a href="#google-play"
+                ><i class="fab fa-google-play"></i>Google play</a
+              >
+              <a href="#app-store"><i class="fab fa-apple"></i>App store</a>
             </div>
-            <div class="getapp-container--desc">
-                <h5>10% Cashback</h5>
-                <h3>Now You Can Order From Mobile</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing quis optr minima?
-                </p>
-                <div class="desc-items">
-                    <a href="#google-play"><i class="fab fa-google-play"></i>Google play</a>
-                    <a href="#app-store"><i class="fab fa-apple"></i>App store</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-<!-- -X----------X---  GET APP  ---X----------X- -->
+      </section>
+      <!-- -X----------X---  GET APP  ---X----------X- -->
 
-<!-- ------------- SOCIALMEDIA PICS  ------------- -->
-    <section class="socialpics" id="socialpics">
+      <!-- ------------- SOCIALMEDIA PICS  ------------- -->
+
+      <section class="socialpics" id="socialpics">
         <h2>#HOMEDESIGN</h2>
         <p>
-            For the ultimate home investment, combine great style, flawless construction and high-quality materials. Discover luxury furniture and decor inspiration for your home interior.
+          For the ultimate home investment, combine great style, flawless
+          construction and high-quality materials. Discover luxury furniture and
+          decor inspiration for your home interior.
         </p>
         <div class="pics-container">
-            
-            <a href="https://www.instagram.com" class="socialpics-item grid1" target="_blank">
-                <img 
-                    src="./assets/instagram1.jpg" 
-                    alt="hammock"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid1"
+            target="_blank"
+          >
+            <img src="./assets/instagram1.jpg" alt="hammock" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid2" target="_blank">
-                <img 
-                    src="./assets/instagram2.jpg" 
-                    alt="nightstand with lamp"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid2"
+            target="_blank"
+          >
+            <img src="./assets/instagram2.jpg" alt="nightstand with lamp" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid3" target="_blank">
-                <img 
-                    src="./assets/instagram3.jpg" 
-                    alt="livingroom desing"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid3"
+            target="_blank"
+          >
+            <img src="./assets/instagram3.jpg" alt="livingroom desing" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid4" target="_blank">
-                <img 
-                    src="./assets/instagram4.jpg" 
-                    alt="table decoration"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid4"
+            target="_blank"
+          >
+            <img src="./assets/instagram4.jpg" alt="table decoration" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid5" target="_blank">
-                <img 
-                    src="./assets/instagram5.jpg" 
-                    alt="black design chair and lamp"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid5"
+            target="_blank"
+          >
+            <img
+              src="./assets/instagram5.jpg"
+              alt="black design chair and lamp"
+            />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid6" target="_blank">
-                <img 
-                    src="./assets/instagram6.jpg" 
-                    alt="fireplace with two decor chair"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid6"
+            target="_blank"
+          >
+            <img
+              src="./assets/instagram6.jpg"
+              alt="fireplace with two decor chair"
+            />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid7" target="_blank">
-                <img 
-                    src="./assets/instagram7.jpg" 
-                    alt="designer armchair"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid7"
+            target="_blank"
+          >
+            <img src="./assets/instagram7.jpg" alt="designer armchair" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid8" target="_blank">
-                <img 
-                    src="./assets/instagram8.jpg" 
-                    alt="king size bed"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid8"
+            target="_blank"
+          >
+            <img src="./assets/instagram8.jpg" alt="king size bed" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="https://www.instagram.com" class="socialpics-item grid9" target="_blank">
-                <img 
-                    src="./assets/instagram9.jpg" 
-                    alt="dining table"
-                />
-                <div class="socialpics-overlay">
-                    <div class="socialpics-overlay-text"><i class="fab fa-instagram"></i></div>
-                </div>
-            </a>
-
-
-            
+          <a
+            href="https://www.instagram.com"
+            class="socialpics-item grid9"
+            target="_blank"
+          >
+            <img src="./assets/instagram9.jpg" alt="dining table" />
+            <div class="socialpics-overlay">
+              <div class="socialpics-overlay-text">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </a>
         </div>
-    </section>
-<!-- -X----------X---  SOCIALMEDIA PICS  ---X----------X- -->
-</main>
+      </section>
+      <!-- -X----------X---  SOCIALMEDIA PICS  ---X----------X- -->
+    </main>
 
+    <!-- -X--------------------------X--- MAIN SITE SECTION  ---X--------------------------X- -->
 
-<!-- -X--------------------------X--- MAIN SITE SECTION  ---X--------------------------X- -->
+    <!-- -------------------------------- FOOTER  -------------------------------- -->
 
-<!-- -------------------------------- FOOTER  -------------------------------- -->
-
-<footer class="footer"> 
-    <div class="footer-container">
+    <footer class="footer">
+      <div class="footer-container">
         <div class="footer-items footer-shopping">
-            <input
+          <input
             type="checkbox"
             name="footer-menu"
             id="footer-shopping__toggle"
-            />
-            <label tabindex="0" for="footer-shopping__toggle" class="footer-menu__btn">
-            <span >About shopping</span>
-            </label>
-            <div class="footer-items__links">
+          />
+          <label
+            tabindex="0"
+            for="footer-shopping__toggle"
+            class="footer-menu__btn"
+          >
+            <span>About shopping</span>
+          </label>
+          <div class="footer-items__links">
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-                accusantium at earum facere error consequatur nam expedita natus
-                deleniti?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae incidunt, odio quo in esse excepturi, quas cum ex
+              officia molestias accusantium at earum facere error consequatur
+              nam expedita natus deleniti?
             </p>
             <ul>
-                <li><a href="#localstore">Find your local store</a></li>
-                <li><a href="#howtoshop">How to shop at Luxory Home Design</a></li>
-                <li><a href="#prepare">Prepare for your visit</a></li>
-                <li><a href="#getapp">Luxory Home Design mobile apps</a></li>
+              <li><a href="#localstore">Find your local store</a></li>
+              <li>
+                <a href="#howtoshop">How to shop at Luxory Home Design</a>
+              </li>
+              <li><a href="#prepare">Prepare for your visit</a></li>
+              <li><a href="#getapp">Luxory Home Design mobile apps</a></li>
             </ul>
-            </div>
+          </div>
         </div>
 
         <div class="footer-items footer-products">
-            <input 
-                type="checkbox" 
-                name="footer-menu" 
-                id="footer-about__toggle" 
-            />
+          <input type="checkbox" name="footer-menu" id="footer-about__toggle" />
 
-            <label tabindex="0" for="footer-about__toggle" class="footer-menu__btn">
-                <span >About products</span>
-            </label>
+          <label
+            tabindex="0"
+            for="footer-about__toggle"
+            class="footer-menu__btn"
+          >
+            <span>About products</span>
+          </label>
 
-            <div class="footer-items__links">
-                <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-                accusantium at earum facere error consequatur nam expedita natus
-                deleniti?
-                </p>
-                <ul>
-                <li><a href="#giftcards">Gift cards</a></li>
-                <li><a href="#buyingguides">Buying guides</a></li>
-                <li><a href="#productguides">Product guides</a></li>
-                <li><a href="#assembly">Assembly instructionss</a></li>
-                <li><a href="#smartproduct">Smart products support</a></li>
-                <li>
-                    <a href="#saferhome">Secure it! Creating safer homes together</a>
-                </li>
-                <li>
-                    <a href="#productratings"
-                    >Luxory Home Design Product Ratings and Reviews</a
-                    >
-                </li>
-                <li><a href="#feedback">Luxory Home Design Feedback</a></li>
-                </ul>
-            </div>
+          <div class="footer-items__links">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae incidunt, odio quo in esse excepturi, quas cum ex
+              officia molestias accusantium at earum facere error consequatur
+              nam expedita natus deleniti?
+            </p>
+            <ul>
+              <li><a href="#giftcards">Gift cards</a></li>
+              <li><a href="#buyingguides">Buying guides</a></li>
+              <li><a href="#productguides">Product guides</a></li>
+              <li><a href="#assembly">Assembly instructionss</a></li>
+              <li><a href="#smartproduct">Smart products support</a></li>
+              <li>
+                <a href="#saferhome"
+                  >Secure it! Creating safer homes together</a
+                >
+              </li>
+              <li>
+                <a href="#productratings"
+                  >Luxory Home Design Product Ratings and Reviews</a
+                >
+              </li>
+              <li><a href="#feedback">Luxory Home Design Feedback</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-items footer-support">
-            <input
-                type="checkbox"
-                name="footer-menu"
-                id="footer-support__toggle"
-            />
-            <label tabindex="0" for="footer-support__toggle" class="footer-menu__btn">
-                <span>Support</span>
-            </label>
-            <div class="footer-items__links">
-                <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-                incidunt, odio quo in esse excepturi, quas cum ex officia molestias
-                accusantium at earum facere error consequatur nam expedita natus
-                deleniti?
-                </p>
-                <ul>
-                <li>
-                    <a href="#appliance">Appliance claims</a>
-                </li>
-                <li>
-                    <a href="#damagedMissingProducts">Damaged/missing products</a>
-                </li>
-                <li>
-                    <a href="#faultyProducts">Faulty products</a>
-                </li>
-                <li>
-                    <a href="#returningProducts">Returning products</a>
-                </li>
-                <li>
-                    <a href="#productsRecalls">Product recalls</a>
-                </li>
-                <li>
-                    <a href="#trackYourOrder">Manage and track your order</a>
-                </li>
-                </ul>
-            </div>
+          <input
+            type="checkbox"
+            name="footer-menu"
+            id="footer-support__toggle"
+          />
+          <label
+            tabindex="0"
+            for="footer-support__toggle"
+            class="footer-menu__btn"
+          >
+            <span>Support</span>
+          </label>
+          <div class="footer-items__links">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae incidunt, odio quo in esse excepturi, quas cum ex
+              officia molestias accusantium at earum facere error consequatur
+              nam expedita natus deleniti?
+            </p>
+            <ul>
+              <li>
+                <a href="#appliance">Appliance claims</a>
+              </li>
+              <li>
+                <a href="#damagedMissingProducts">Damaged/missing products</a>
+              </li>
+              <li>
+                <a href="#faultyProducts">Faulty products</a>
+              </li>
+              <li>
+                <a href="#returningProducts">Returning products</a>
+              </li>
+              <li>
+                <a href="#productsRecalls">Product recalls</a>
+              </li>
+              <li>
+                <a href="#trackYourOrder">Manage and track your order</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>  
+      </div>
 
-    <div class="footer-links">
-
+      <div class="footer-links">
         <div class="footer-links__social">
-            <a class="social-links social-media" href="./index.html#facebook"><i class="fab fa-facebook-f"></i></a>
-            <a class="social-links social-media" href="./index.html#twitter"><i class="fab fa-twitter"></i></a>
-            <a class="social-links social-media" href="./index.html#instagram"><i class="fab fa-instagram"></i></a>
-            <a class="social-links social-media" href="./index.html#youtube"><i class="fab fa-youtube"></i></a>
-            <a class="social-links social-pay" href="./index.html#payinformation"><i class="fab fa-cc-visa"></i></a>
-            <a class="social-links social-pay" href="./index.html#payinformation"><i class="fab fa-cc-mastercard"></i></a>
-            <a class="social-links social-pay" href="./index.html#payinformation"><i class="fab fa-cc-paypal"></i></a>
-            <a class="social-links social-pay" href="./index.html#payinformation"><i class="fab fa-cc-apple-pay"></i></a>
+          <a class="social-links social-media" href="./index.html#facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="social-links social-media" href="./index.html#twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="social-links social-media" href="./index.html#instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="social-links social-media" href="./index.html#youtube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a class="social-links social-pay" href="./index.html#payinformation"
+            ><i class="fab fa-cc-visa"></i
+          ></a>
+          <a class="social-links social-pay" href="./index.html#payinformation"
+            ><i class="fab fa-cc-mastercard"></i
+          ></a>
+          <a class="social-links social-pay" href="./index.html#payinformation"
+            ><i class="fab fa-cc-paypal"></i
+          ></a>
+          <a class="social-links social-pay" href="./index.html#payinformation"
+            ><i class="fab fa-cc-apple-pay"></i
+          ></a>
         </div>
 
         <div class="footer-links__address">
-            <p>Home Design Hungary - 1th Floor, 95 Rainbow Street, Budapest, 1201 © Home Design 2002-2021</p>
+          <p>
+            Home Design Hungary - 1th Floor, 95 Rainbow Street, Budapest, 1201 ©
+            Home Design 2002-2021
+          </p>
         </div>
 
         <div class="footer-links__policy">
-            <a href="./index.html#privacyPolicy">Privacy policy</a>
-            <a href="./index.html#cookiePolicy">Cookie policy</a>
-            <a href="./index.html#cookieSettings">Cookie settings</a>
-            <a href="./index.html#terms&Conditions">Terms & Conditions</a>
-            <a href="./index.html#responsibleDisclosurePolicy">Responsible Disclosure policy</a>
-            <a href="./index.html#modernSlaveryStatement">Modern Slavery Statement</a>
-            <a href="./index.html#accessibility">Accessibility</a>
+          <a href="./index.html#privacyPolicy">Privacy policy</a>
+          <a href="./index.html#cookiePolicy">Cookie policy</a>
+          <a href="./index.html#cookieSettings">Cookie settings</a>
+          <a href="./index.html#terms&Conditions">Terms & Conditions</a>
+          <a href="./index.html#responsibleDisclosurePolicy"
+            >Responsible Disclosure policy</a
+          >
+          <a href="./index.html#modernSlaveryStatement"
+            >Modern Slavery Statement</a
+          >
+          <a href="./index.html#accessibility">Accessibility</a>
         </div>
-        
-    </div>
-    <!-- -------------------------------- BACK TO THE TOP ARROW  -------------------------------- -->
-    <div class="backarrow">
-        <a href="./index.html#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
-    </div>
+      </div>
+      <!-- -------------------------------- BACK TO THE TOP ARROW  -------------------------------- -->
 
-<!-- -X--------------------------X--- BACK TO THE TOP ARROW  ---X--------------------------X- --> 
+      <div class="backarrow">
+        <a href="./index.html#home"
+          ><i class="fas fa-arrow-alt-circle-up"></i
+        ></a>
+      </div>
 
-</footer>
+      <!-- -X--------------------------X--- BACK TO THE TOP ARROW  ---X--------------------------X- -->
+    </footer>
 
-<!-- -X--------------------------X--- FOOTER  ---X--------------------------X- -->
+    <!-- -X--------------------------X--- FOOTER  ---X--------------------------X- -->
 
-<!-- -------------------------------- JS script  -------------------------------- -->
-<script src="./js/main.js"></script>
- 
-</body>
-
+    <!-- -------------------------------- JS script  -------------------------------- -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

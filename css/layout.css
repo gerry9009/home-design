@@ -1,4 +1,4 @@
- /**
+/**
  * CONTENTS
  *
  * LAYOUT
@@ -6,7 +6,7 @@
  * Modifiers............Media queries for the layout.
  */
 
- /*------------------------------------*\
+/*------------------------------------*\
   #ELEMENTS
 \*------------------------------------*/
 * {
@@ -14,17 +14,16 @@
 }
 
 .header {
-    width: 100vw;
-    position: fixed;
-    z-index: 10;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
 }
 
 .main {
-    padding-top:  6.5vh;
-    color:  var(--color-second);
-    background-color:  var(--color-background);
+  padding-top: 6.5vh;
+  color: var(--color-second);
+  background-color: var(--color-background);
 }
-
 
 .footer {
   background-color: var(--color-zeus);
@@ -39,8 +38,8 @@
   #MODIFIERS
 \*------------------------------------*/
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
   .main {
-    padding-top:  3vh;
+    padding-top: 3vh;
   }
 }
