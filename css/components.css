@@ -351,12 +351,15 @@
   background-color: var(--color-white);
   width: 32px;
   height: 32px;
-  font-size: 1.2rem;
   color: var(--color-black);
   display: flex;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+}
+
+.home-social svg {
+  font-size: 1.2rem;
 }
 
 @keyframes socAnim {
@@ -1671,15 +1674,20 @@ h4 {
   z-index: 2;
 }
 
+.backarrow svg {
+  font-size: 2.2rem;
+  color: var(--color-black);
+}
+
 .backarrow:hover {
   transform: scale(1.2);
 }
 
-.backarrow i:first-of-type {
+.backarrow svg:first-of-type {
   color: var(--color-second);
 }
 
-.backarrow i:first-of-type:hover {
+.backarrow svg:first-of-type:hover {
   color: var(--color-fifth);
 }
 
