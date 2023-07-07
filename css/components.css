@@ -1110,8 +1110,12 @@ h4 {
 }
 
 .desc-items > a > i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
+}
+
+.svg-inline--fa {
+  font-size: 1.5rem;
 }
 
 .desc-items > a:hover {
